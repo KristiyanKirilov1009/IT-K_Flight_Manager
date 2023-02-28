@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Flight_Manager-58ad9a58-2a74-4f87-9fba-9baea1e29b44")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Flight_Manager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
