@@ -4,7 +4,7 @@ namespace FlightManager.Models
 {
     public class User
     {
-        public User(string userName, string password, string firstName, string lastName, string eGN, string address, int phoneNumber, string nationality, Roles role)
+        public User(string userName, string password, string firstName, string lastName, string eGN, string address, string phoneNumber, string nationality, Roles role)
         {
             UserName = userName;
             Password = password;
