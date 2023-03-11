@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\FlightManager",
+    "\\FlightManager\\FlightManager",
+    "\\FlightManager\\FlightManager\\Models",
+    "\\FlightManager\\FlightManager\\Views",
+    "\\FlightManager\\FlightManager\\Views\\Home"
+  ],
+  "SelectedNode": "\\FlightManager\\FlightManager\\Models\\Reservation.cs",
+  "PreviewInSolutionExplorer": false
+}

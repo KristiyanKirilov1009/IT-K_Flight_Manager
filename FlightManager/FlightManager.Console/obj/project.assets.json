@@ -6424,24 +6424,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\serin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IT кариера\\TestProject\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Console\\FlightManager.Console.csproj",
+      "projectUniqueName": "C:\\Users\\serin\\Desktop\\flightManager\\FlightManager\\FlightManager.Console\\FlightManager.Console.csproj",
       "projectName": "FlightManager.Console",
-      "projectPath": "D:\\IT кариера\\TestProject\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Console\\FlightManager.Console.csproj",
-      "packagesPath": "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\",
-      "outputPath": "D:\\IT кариера\\TestProject\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Console\\obj\\",
+      "projectPath": "C:\\Users\\serin\\Desktop\\flightManager\\FlightManager\\FlightManager.Console\\FlightManager.Console.csproj",
+      "packagesPath": "C:\\Users\\serin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\serin\\Desktop\\flightManager\\FlightManager\\FlightManager.Console\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Kristiyan Kirilov\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\serin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6455,8 +6450,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\IT кариера\\TestProject\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj": {
-              "projectPath": "D:\\IT кариера\\TestProject\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj"
+            "C:\\Users\\serin\\Desktop\\flightManager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj": {
+              "projectPath": "C:\\Users\\serin\\Desktop\\flightManager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj"
             }
           }
         }
@@ -6481,12 +6476,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.12, 6.0.12]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.12, 6.0.12]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.12, 6.0.12]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.12, 6.0.12]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

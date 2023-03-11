@@ -12,3 +12,17 @@ D:\IT кариера\TestProject\IT-K_Flight_Manager\FlightManager\FlightManager
 D:\IT кариера\TestProject\IT-K_Flight_Manager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.pdb
 D:\IT кариера\TestProject\IT-K_Flight_Manager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.genruntimeconfig.cache
 D:\IT кариера\TestProject\IT-K_Flight_Manager\FlightManager\FlightManager.Data\obj\Debug\net6.0\ref\FlightManager.Data.dll
+C:\Users\serin\Desktop\flightManager\FlightManager\FlightManager.Data\bin\Debug\net6.0\FlightManager.Data.deps.json
+C:\Users\serin\Desktop\flightManager\FlightManager\FlightManager.Data\bin\Debug\net6.0\FlightManager.Data.runtimeconfig.json
+C:\Users\serin\Desktop\flightManager\FlightManager\FlightManager.Data\bin\Debug\net6.0\FlightManager.Data.dll
+C:\Users\serin\Desktop\flightManager\FlightManager\FlightManager.Data\bin\Debug\net6.0\FlightManager.Data.pdb
+C:\Users\serin\Desktop\flightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.csproj.AssemblyReference.cache
+C:\Users\serin\Desktop\flightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serin\Desktop\flightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.AssemblyInfoInputs.cache
+C:\Users\serin\Desktop\flightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.AssemblyInfo.cs
+C:\Users\serin\Desktop\flightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.csproj.CoreCompileInputs.cache
+C:\Users\serin\Desktop\flightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.dll
+C:\Users\serin\Desktop\flightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\refint\FlightManager.Data.dll
+C:\Users\serin\Desktop\flightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.pdb
+C:\Users\serin\Desktop\flightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.genruntimeconfig.cache
+C:\Users\serin\Desktop\flightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\ref\FlightManager.Data.dll
