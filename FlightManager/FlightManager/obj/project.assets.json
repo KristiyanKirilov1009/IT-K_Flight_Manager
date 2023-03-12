@@ -10090,19 +10090,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
-      "projectUniqueName": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager.csproj",
+      "projectUniqueName": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj",
       "projectName": "FlightManager",
-      "projectPath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager.csproj",
+      "projectPath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj",
       "packagesPath": "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\",
-      "outputPath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\obj\\",
-=======
-      "projectUniqueName": "D:\\IT кариера\\EXAM_Module13\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager.csproj",
-      "projectName": "FlightManager",
-      "projectPath": "D:\\IT кариера\\EXAM_Module13\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager.csproj",
-      "packagesPath": "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\",
-      "outputPath": "D:\\IT кариера\\EXAM_Module13\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\obj\\",
->>>>>>> Stashed changes
+      "outputPath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10122,15 +10114,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-<<<<<<< Updated upstream
           "projectReferences": {}
-=======
-          "projectReferences": {
-            "D:\\IT кариера\\EXAM_Module13\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj": {
-              "projectPath": "D:\\IT кариера\\EXAM_Module13\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj"
-            }
-          }
->>>>>>> Stashed changes
         }
       },
       "warningProperties": {
@@ -10185,11 +10169,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< Updated upstream
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
->>>>>>> Stashed changes
       }
     }
   }
