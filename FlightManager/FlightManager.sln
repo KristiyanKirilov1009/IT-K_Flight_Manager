@@ -5,9 +5,7 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightManager", "FlightManager\FlightManager.csproj", "{3B3B60E2-646D-4BE7-B9D5-C8A8535FDC98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightManager.Data", "FlightManager.Data\FlightManager.Data.csproj", "{CAEED10B-814B-45B3-BFBC-5DB12893E164}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightManager.Console", "FlightManager.Console\FlightManager.Console.csproj", "{AD152458-010B-4E08-82C9-47B8795A46B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightManager.Data", "FlightManager.Data\FlightManager.Data.csproj", "{CAEED10B-814B-45B3-BFBC-5DB12893E164}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{CAEED10B-814B-45B3-BFBC-5DB12893E164}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAEED10B-814B-45B3-BFBC-5DB12893E164}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAEED10B-814B-45B3-BFBC-5DB12893E164}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD152458-010B-4E08-82C9-47B8795A46B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD152458-010B-4E08-82C9-47B8795A46B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD152458-010B-4E08-82C9-47B8795A46B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD152458-010B-4E08-82C9-47B8795A46B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

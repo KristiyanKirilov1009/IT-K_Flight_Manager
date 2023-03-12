@@ -1,4 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using FlightManager.Data.Models;
+using FlightManager.Data.Models.Enums;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FlightManager.Models
 {
@@ -39,6 +42,10 @@ namespace FlightManager.Models
         public string Nationality { get; set; }
         [Required]
         public Roles Role { get; set; }
+
+        [ForeignKey(nameof(CompanyID))]
+        public int CompanyID { get; set; }
+        public Company Company { get; set; }
 
     }
 }

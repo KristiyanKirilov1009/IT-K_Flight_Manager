@@ -58,3 +58,11 @@ D:\IT кариера\TestProject\IT-K_Flight_Manager\FlightManager\FlightManager
 D:\IT кариера\TestProject\IT-K_Flight_Manager\FlightManager\FlightManager.Console\obj\Debug\net6.0\FlightManager.Console.pdb
 D:\IT кариера\TestProject\IT-K_Flight_Manager\FlightManager\FlightManager.Console\obj\Debug\net6.0\FlightManager.Console.genruntimeconfig.cache
 D:\IT кариера\TestProject\IT-K_Flight_Manager\FlightManager\FlightManager.Console\obj\Debug\net6.0\ref\FlightManager.Console.dll
+D:\IT кариера\EXAM_Module13\IT-K_Flight_Manager\FlightManager\FlightManager.Console\obj\Debug\net6.0\FlightManager.Console.csproj.AssemblyReference.cache
+D:\IT кариера\EXAM_Module13\IT-K_Flight_Manager\FlightManager\FlightManager.Console\obj\Debug\net6.0\FlightManager.Console.GeneratedMSBuildEditorConfig.editorconfig
+D:\IT кариера\EXAM_Module13\IT-K_Flight_Manager\FlightManager\FlightManager.Console\obj\Debug\net6.0\FlightManager.Console.AssemblyInfoInputs.cache
+D:\IT кариера\EXAM_Module13\IT-K_Flight_Manager\FlightManager\FlightManager.Console\obj\Debug\net6.0\FlightManager.Console.AssemblyInfo.cs
+D:\IT кариера\EXAM_Module13\IT-K_Flight_Manager\FlightManager\FlightManager.Console\obj\Debug\net6.0\FlightManager.Console.csproj.CoreCompileInputs.cache
+D:\IT кариера\EXAM_Module13\IT-K_Flight_Manager\FlightManager\FlightManager.Console\obj\Debug\net6.0\FlightManager.Console.dll
+D:\IT кариера\EXAM_Module13\IT-K_Flight_Manager\FlightManager\FlightManager.Console\obj\Debug\net6.0\refint\FlightManager.Console.dll
+D:\IT кариера\EXAM_Module13\IT-K_Flight_Manager\FlightManager\FlightManager.Console\obj\Debug\net6.0\FlightManager.Console.pdb

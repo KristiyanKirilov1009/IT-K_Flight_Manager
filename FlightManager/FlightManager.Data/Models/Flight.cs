@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using FlightManager.Data.Models;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FlightManager.Models
 {
@@ -7,6 +9,18 @@ namespace FlightManager.Models
         public Flight()
         {
             Reservations = new HashSet<Reservation>();
+        }
+
+        public Flight(string loacationFrom, string loacationTo, DateTime takeOffTime, DateTime landingTime, string planeType, string pilotName, int passengersCapacity, int capacityBusinessClass)
+        {
+            LoacationFrom = loacationFrom;
+            LoacationTo = loacationTo;
+            TakeOffTime = takeOffTime;
+            LandingTime = landingTime;
+            PlaneType = planeType;
+            PilotName = pilotName;
+            PassengersCapacity = passengersCapacity;
+            CapacityBusinessClass = capacityBusinessClass;
         }
 
         [Key]
@@ -28,5 +42,8 @@ namespace FlightManager.Models
         [Required]
         public int CapacityBusinessClass { get; set; }
         public ICollection<Reservation> Reservations { get; set; }
+        [ForeignKey(nameof(CompanyID))]
+        public int CompanyID { get; set; }
+        public Company Company { get; set; }
     }
 }

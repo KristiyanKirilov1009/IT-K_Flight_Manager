@@ -1,10 +1,23 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using FlightManager.Data.Models;
+using FlightManager.Data.Models.Enums;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FlightManager.Models
 {
     public class Passanger
     {
+        public Passanger(string firstName, string middleName, string lastName, string eGN, string phoneNumber, string nationality, TicketTypes ticketType)
+        {
+            FirstName = firstName;
+            MiddleName = middleName;
+            LastName = lastName;
+            EGN = eGN;
+            PhoneNumber = phoneNumber;
+            Nationality = nationality;
+            TicketType = ticketType;
+        }
+
         [Key]
         public int PassangerID { get; set; }
         [Required]
@@ -15,16 +28,17 @@ namespace FlightManager.Models
         public string LastName { get; set; }
         [Required]
         [MaxLength(10)]
-        public int EGN { get; set; }
+        public string EGN { get; set; }
         [Required]
         [MaxLength(10)]
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
         [Required]
         public string Nationality { get; set; }
         [Required]
         public TicketTypes TicketType { get; set; }
         [ForeignKey(nameof(ReservationID))]
-        public int? ReservationID { get; set; }
+        public int ReservationID { get; set; }
         public Reservation? Reservation { get; set; }
+        public ICollection<ReservationsPassangers> ReservationsPassangers { get; set; }
     }
 }
