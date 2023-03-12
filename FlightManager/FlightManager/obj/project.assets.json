@@ -3564,6 +3564,21 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "FlightManager.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.14",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.14",
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6"
+        },
+        "compile": {
+          "bin/placeholder/FlightManager.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FlightManager.Data.dll": {}
+        }
       }
     }
   },
@@ -10072,10 +10087,16 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "FlightManager.Data/1.0.0": {
+      "type": "project",
+      "path": "../FlightManager.Data/FlightManager.Data.csproj",
+      "msbuildProject": "../FlightManager.Data/FlightManager.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "FlightManager.Data >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer.Design >= 1.1.6",
@@ -10090,11 +10111,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj",
+      "projectUniqueName": "C:\\Users\\Kristiyan Kirilov\\Desktop\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager.csproj",
       "projectName": "FlightManager",
-      "projectPath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj",
+      "projectPath": "C:\\Users\\Kristiyan Kirilov\\Desktop\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager.csproj",
       "packagesPath": "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\",
-      "outputPath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager\\obj\\",
+      "outputPath": "C:\\Users\\Kristiyan Kirilov\\Desktop\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10114,7 +10135,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Kristiyan Kirilov\\Desktop\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj": {
+              "projectPath": "C:\\Users\\Kristiyan Kirilov\\Desktop\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

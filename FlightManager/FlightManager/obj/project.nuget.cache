@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mLxvwxbeUGjDTHwBJon5Vwbuw8CsP2VBXPqashIAivnRdydetXq4KOeedizi2lp4MiitQlfmHPh2AlxhECOH5A==",
+  "dgSpecHash": "pbAjdMUuI03HO+kWniqpEjwINC6Qkf9I8aBLyEp+PjysmomBRCJGKINd/5BrdSA7H6/IepK5scfUXVA13KDkfA==",
   "success": true,
-  "projectFilePath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj",
+  "projectFilePath": "C:\\Users\\Kristiyan Kirilov\\Desktop\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IT кариера\\EXAM_Module13\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj": {}
+    "C:\\Users\\Kristiyan Kirilov\\Desktop\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj": {}
   },
   "projects": {
-    "D:\\IT кариера\\EXAM_Module13\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj": {
+    "C:\\Users\\Kristiyan Kirilov\\Desktop\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IT кариера\\EXAM_Module13\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Kristiyan Kirilov\\Desktop\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj",
         "projectName": "FlightManager.Data",
-        "projectPath": "D:\\IT кариера\\EXAM_Module13\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj",
+        "projectPath": "C:\\Users\\Kristiyan Kirilov\\Desktop\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj",
         "packagesPath": "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\",
-        "outputPath": "D:\\IT кариера\\EXAM_Module13\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\obj\\",
+        "outputPath": "C:\\Users\\Kristiyan Kirilov\\Desktop\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
