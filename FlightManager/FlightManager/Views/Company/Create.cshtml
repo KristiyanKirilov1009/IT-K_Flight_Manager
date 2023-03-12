@@ -1,0 +1,20 @@
+﻿@using FlightManager.Data.Models;
+
+@model Company
+
+<div class="loginContainer">
+    <form action="#" class="loginForm">
+        <div class="left-side-container">
+            <label>Company name</label><br />
+            <input type="text" asp-for="CompanyName"><br>
+            <label>Company password</label><br />
+            <input type="password" asp-for="Password"><br>
+            <label>Location</label><br />
+            <input type="text" asp-for="CompanyLocation"><br>
+            <button type="submit" asp-controller="Company" asp-action="Create" class="btn btn-primary">Create</button>
+        </div>
+    </form>
+</div>
+
+
+
