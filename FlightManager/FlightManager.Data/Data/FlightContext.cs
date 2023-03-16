@@ -12,6 +12,7 @@ namespace FlightManager.Data.Data
         public DbSet<Passanger> Passangers { get; set; }
         public DbSet<Company> Companies { get; set; }
         public DbSet<ReservationsPassangers> ReservationsPassangers { get; set; }
+        public DbSet<CompaniesUsers> CompaniesUsers { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
@@ -39,6 +40,22 @@ namespace FlightManager.Data.Data
                 .WithMany(p => p.ReservationsPassangers)
                 .HasForeignKey(rp => rp.PassangerID)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<CompaniesUsers>()
+                .HasKey(cu => new { cu.CompanyID, cu.UserID });
+
+            modelBuilder.Entity<CompaniesUsers>()
+                .HasOne(cu => cu.User)
+                .WithMany(u => u.CompaniesUsers)
+                .HasForeignKey(u => u.UserID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<CompaniesUsers>()
+                .HasOne(c => c.Company)
+                .WithMany(c => c.CompaniesUsers)
+                .HasForeignKey(c => c.CompanyID)
+                .OnDelete(DeleteBehavior.Restrict);
+
         }
     }
 }

@@ -22,6 +22,21 @@ namespace FlightManager.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("FlightManager.Data.Models.CompaniesUsers", b =>
+                {
+                    b.Property<int>("CompanyID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserID")
+                        .HasColumnType("int");
+
+                    b.HasKey("CompanyID", "UserID");
+
+                    b.HasIndex("UserID");
+
+                    b.ToTable("CompaniesUsers");
+                });
+
             modelBuilder.Entity("FlightManager.Data.Models.Company", b =>
                 {
                     b.Property<int>("CompanyID")
@@ -32,17 +47,18 @@ namespace FlightManager.Data.Migrations
 
                     b.Property<string>("CompanyLocation")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("CompanyName")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(130)
+                        .HasColumnType("nvarchar(130)");
 
                     b.HasKey("CompanyID");
 
@@ -214,7 +230,8 @@ namespace FlightManager.Data.Migrations
 
                     b.Property<string>("Address")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<int>("CompanyID")
                         .HasColumnType("int");
@@ -224,21 +241,29 @@ namespace FlightManager.Data.Migrations
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");
 
-                    b.Property<string>("FirstName")
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(18)
+                        .HasColumnType("nvarchar(18)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(18)
+                        .HasColumnType("nvarchar(18)");
 
                     b.Property<string>("Nationality")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(57)
+                        .HasColumnType("nvarchar(57)");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(130)
+                        .HasColumnType("nvarchar(130)");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
@@ -250,13 +275,33 @@ namespace FlightManager.Data.Migrations
 
                     b.Property<string>("UserName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(18)
+                        .HasColumnType("nvarchar(18)");
 
                     b.HasKey("ID");
 
                     b.HasIndex("CompanyID");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("FlightManager.Data.Models.CompaniesUsers", b =>
+                {
+                    b.HasOne("FlightManager.Data.Models.Company", "Company")
+                        .WithMany("CompaniesUsers")
+                        .HasForeignKey("CompanyID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("FlightManager.Models.User", "User")
+                        .WithMany("CompaniesUsers")
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Company");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("FlightManager.Data.Models.ReservationsPassangers", b =>
@@ -322,6 +367,8 @@ namespace FlightManager.Data.Migrations
 
             modelBuilder.Entity("FlightManager.Data.Models.Company", b =>
                 {
+                    b.Navigation("CompaniesUsers");
+
                     b.Navigation("Fligths");
 
                     b.Navigation("Users");
@@ -340,6 +387,11 @@ namespace FlightManager.Data.Migrations
             modelBuilder.Entity("FlightManager.Models.Reservation", b =>
                 {
                     b.Navigation("ReservationsPassangers");
+                });
+
+            modelBuilder.Entity("FlightManager.Models.User", b =>
+                {
+                    b.Navigation("CompaniesUsers");
                 });
 #pragma warning restore 612, 618
         }

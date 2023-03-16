@@ -1,20 +1,29 @@
-﻿@using FlightManager.Data.Models;
+﻿@using FlightManager.Web.ViewModels.Companies;
 
-@model Company
+@model CreateCompanyViewModel
 
 <div class="loginContainer">
-    <form action="#" class="loginForm">
+    <form action="#" class="loginForm" method="post">
         <div class="left-side-container">
             <label>Company name</label><br />
             <input type="text" asp-for="CompanyName"><br>
+            <span asp-validation-for="CompanyName" style="color:red"></span>
             <label>Company password</label><br />
             <input type="password" asp-for="Password"><br>
+            <span asp-validation-for="Password" style="color:red"></span>
             <label>Location</label><br />
             <input type="text" asp-for="CompanyLocation"><br>
-            <button type="submit" asp-controller="Company" asp-action="Create" class="btn btn-primary">Create</button>
+            <span asp-validation-for="CompanyLocation" style="color:red"></span>
+            <input type="submit" asp-controller="Company" asp-action="Create" class="btn btn-primary" value="Create"/>
         </div>
     </form>
 </div>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
 
 
 

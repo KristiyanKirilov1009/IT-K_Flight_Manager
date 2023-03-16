@@ -7,6 +7,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightManager", "FlightMana
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightManager.Data", "FlightManager.Data\FlightManager.Data.csproj", "{CAEED10B-814B-45B3-BFBC-5DB12893E164}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightManager.Web.ViewModels", "FlightManager.Web.ViewModels\FlightManager.Web.ViewModels.csproj", "{59F6F3A5-DF72-4A23-85FE-093204744FEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightManager.Services", "FlightManager.Services\FlightManager.Services.csproj", "{F038D48B-0A12-4198-8318-FAE23B386BF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{8351AF51-F451-4C16-B740-9A3A7F743F07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{52277963-DCCC-45A3-946C-42D7533E2530}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{A26AF6A5-241E-47BB-9C42-684ED8557E73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightManager.Services.Mapping", "FlightManager.Services.Mapping\FlightManager.Services.Mapping.csproj", "{892F04F6-2838-4846-8A46-ACC224F81A99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +33,28 @@ Global
 		{CAEED10B-814B-45B3-BFBC-5DB12893E164}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAEED10B-814B-45B3-BFBC-5DB12893E164}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAEED10B-814B-45B3-BFBC-5DB12893E164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59F6F3A5-DF72-4A23-85FE-093204744FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59F6F3A5-DF72-4A23-85FE-093204744FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59F6F3A5-DF72-4A23-85FE-093204744FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59F6F3A5-DF72-4A23-85FE-093204744FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F038D48B-0A12-4198-8318-FAE23B386BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F038D48B-0A12-4198-8318-FAE23B386BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F038D48B-0A12-4198-8318-FAE23B386BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F038D48B-0A12-4198-8318-FAE23B386BF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{892F04F6-2838-4846-8A46-ACC224F81A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{892F04F6-2838-4846-8A46-ACC224F81A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{892F04F6-2838-4846-8A46-ACC224F81A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{892F04F6-2838-4846-8A46-ACC224F81A99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3B3B60E2-646D-4BE7-B9D5-C8A8535FDC98} = {8351AF51-F451-4C16-B740-9A3A7F743F07}
+		{CAEED10B-814B-45B3-BFBC-5DB12893E164} = {52277963-DCCC-45A3-946C-42D7533E2530}
+		{59F6F3A5-DF72-4A23-85FE-093204744FEB} = {8351AF51-F451-4C16-B740-9A3A7F743F07}
+		{F038D48B-0A12-4198-8318-FAE23B386BF9} = {A26AF6A5-241E-47BB-9C42-684ED8557E73}
+		{892F04F6-2838-4846-8A46-ACC224F81A99} = {A26AF6A5-241E-47BB-9C42-684ED8557E73}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B336EDCD-960D-4189-9BE3-C051FD9079F8}

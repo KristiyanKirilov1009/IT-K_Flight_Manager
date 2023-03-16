@@ -19,15 +19,17 @@ namespace FlightManager.Data.Models
         [Key]
         public int CompanyID { get; set; }
         [Required]
-        [MaxLength(50)]
+        [StringLength(30, MinimumLength = 3, ErrorMessage = "Name should be at least 3 characters!")]
         public string CompanyName { get; set; }
         [Required]
-        [MinLength(8)]
+        [MaxLength(130)]
         public string Password { get; set; }
         [Required]
-        [MaxLength(50)]
+        [StringLength(30, MinimumLength = 1, ErrorMessage = "Location should be at least 10 characters!")]
         public string CompanyLocation { get; set; }
         public ICollection<User> Users { get; set; }
         public ICollection<Flight> Fligths { get; set; }
+
+        public ICollection<CompaniesUsers> CompaniesUsers { get; set; }
     }
 }

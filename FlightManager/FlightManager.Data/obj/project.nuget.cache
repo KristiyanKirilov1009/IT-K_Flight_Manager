@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kzJENmUKzAZGHPpWhEpOq/31IoxRQz35TUSJEIKW8MD1j0OknjTFBn29x1KMQQJAF6e98+jTWeR+D+rHPKl9LQ==",
+  "dgSpecHash": "thZoMcULPwAPVI2YWwf2Fu2Ge2lEmRCN6IaW7fp3kqTEGR6bW7fxu+hciy9ZA/HKBoPBzTZyDyveKHk1vE6bBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kristiyan Kirilov\\Desktop\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj",
+  "projectFilePath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

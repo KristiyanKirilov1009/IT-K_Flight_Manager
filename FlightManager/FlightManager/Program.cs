@@ -1,4 +1,7 @@
 using FlightManager.Data.Data;
+using FlightManager.Services;
+using FlightManager.Services.Interfaces;
+using FlightManager.Services.Mapping;
 using Microsoft.Build.Framework;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,6 +13,14 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<FlightContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")
     ));
+
+builder.Services.AddAutoMapper(cfg =>
+{
+    cfg.AddProfile<FlightManagerProfile>();
+});
+
+builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<ICompanyService, CompanyService>();
 
 
 var app = builder.Build();

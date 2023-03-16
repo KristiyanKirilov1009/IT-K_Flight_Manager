@@ -54,3 +54,17 @@ C:\Users\Kristiyan Kirilov\Desktop\IT-K_Flight_Manager\FlightManager\FlightManag
 C:\Users\Kristiyan Kirilov\Desktop\IT-K_Flight_Manager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.pdb
 C:\Users\Kristiyan Kirilov\Desktop\IT-K_Flight_Manager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.genruntimeconfig.cache
 C:\Users\Kristiyan Kirilov\Desktop\IT-K_Flight_Manager\FlightManager\FlightManager.Data\obj\Debug\net6.0\ref\FlightManager.Data.dll
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Data\bin\Debug\net6.0\FlightManager.Data.deps.json
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Data\bin\Debug\net6.0\FlightManager.Data.runtimeconfig.json
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Data\bin\Debug\net6.0\FlightManager.Data.dll
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Data\bin\Debug\net6.0\FlightManager.Data.pdb
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.csproj.AssemblyReference.cache
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.AssemblyInfoInputs.cache
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.AssemblyInfo.cs
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.csproj.CoreCompileInputs.cache
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.dll
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\refint\FlightManager.Data.dll
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.pdb
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\FlightManager.Data.genruntimeconfig.cache
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Data\obj\Debug\net6.0\ref\FlightManager.Data.dll

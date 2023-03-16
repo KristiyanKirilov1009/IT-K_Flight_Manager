@@ -31,21 +31,22 @@
                 <li><a href="#">ABOUT US</a></li>
                 <li><a href="#">BOOK A FLIGHT</a></li>
                 <li><a asp-controller="Login" asp-action="Index">LOG IN</a></li>
-                <li><a asp-controller="Register" asp-action="Index">REGISTER</a></li>
+                <li><a asp-controller="Register" asp-action="Create">REGISTER</a></li>
             </ul>
         </nav>
-        @*         </div>
-        </div>
-        </nav>*@
-        @RenderBody()
-        @* <footer class="border-top footer text-muted">
-        <div class="container">
-        &copy; 2023 - FlightManager - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-        </footer>*@
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-        @await RenderSectionAsync("Scripts", required: false)
+    </section>
+    @*         </div>
+    </div>
+    </nav>*@
+    @RenderBody()
+    @* <footer class="border-top footer text-muted">
+    <div class="container">
+    &copy; 2023 - FlightManager - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+    </footer>*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
