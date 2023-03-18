@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,8 +13,8 @@ namespace FlightManager.Data.Models
     {
         public Company()
         {
-            Users = new HashSet<User>();
             Fligths = new HashSet<Flight>();
+            Users = new HashSet<CompaniesUsers>();
         }
 
         [Key]
@@ -27,9 +28,7 @@ namespace FlightManager.Data.Models
         [Required]
         [StringLength(30, MinimumLength = 1, ErrorMessage = "Location should be at least 10 characters!")]
         public string CompanyLocation { get; set; }
-        public ICollection<User> Users { get; set; }
+        public ICollection<CompaniesUsers> Users { get; set; }
         public ICollection<Flight> Fligths { get; set; }
-
-        public ICollection<CompaniesUsers> CompaniesUsers { get; set; }
     }
 }

@@ -14,10 +14,14 @@ namespace FlightManager.Data.Data
         public DbSet<ReservationsPassangers> ReservationsPassangers { get; set; }
         public DbSet<CompaniesUsers> CompaniesUsers { get; set; }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=FlightManagerDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-        //}
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=FlightManagerDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        }
+        public FlightContext()
+        {
+            
+        }
 
         public FlightContext(DbContextOptions<FlightContext> options) : base(options)
         {
@@ -41,19 +45,19 @@ namespace FlightManager.Data.Data
                 .HasForeignKey(rp => rp.PassangerID)
                 .OnDelete(DeleteBehavior.Restrict);
 
+
+
             modelBuilder.Entity<CompaniesUsers>()
                 .HasKey(cu => new { cu.CompanyID, cu.UserID });
 
             modelBuilder.Entity<CompaniesUsers>()
                 .HasOne(cu => cu.User)
-                .WithMany(u => u.CompaniesUsers)
-                .HasForeignKey(u => u.UserID)
+                .WithOne(u => u.Company)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<CompaniesUsers>()
                 .HasOne(c => c.Company)
-                .WithMany(c => c.CompaniesUsers)
-                .HasForeignKey(c => c.CompanyID)
+                .WithMany(c => c.Users)
                 .OnDelete(DeleteBehavior.Restrict);
 
         }

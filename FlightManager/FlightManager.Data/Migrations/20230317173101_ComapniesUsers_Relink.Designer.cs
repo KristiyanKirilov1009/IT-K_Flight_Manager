@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FlightManager.Data.Migrations
 {
     [DbContext(typeof(FlightContext))]
-    [Migration("20230312180700_AddedToCompany")]
-    partial class AddedToCompany
+    [Migration("20230317173101_ComapniesUsers_Relink")]
+    partial class ComapniesUsers_Relink
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,6 +23,22 @@ namespace FlightManager.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("FlightManager.Data.Models.CompaniesUsers", b =>
+                {
+                    b.Property<int>("CompanyID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserID")
+                        .HasColumnType("int");
+
+                    b.HasKey("CompanyID", "UserID");
+
+                    b.HasIndex("UserID")
+                        .IsUnique();
+
+                    b.ToTable("CompaniesUsers");
+                });
 
             modelBuilder.Entity("FlightManager.Data.Models.Company", b =>
                 {
@@ -34,17 +50,18 @@ namespace FlightManager.Data.Migrations
 
                     b.Property<string>("CompanyLocation")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("CompanyName")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(130)
+                        .HasColumnType("nvarchar(130)");
 
                     b.HasKey("CompanyID");
 
@@ -216,7 +233,8 @@ namespace FlightManager.Data.Migrations
 
                     b.Property<string>("Address")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<int>("CompanyID")
                         .HasColumnType("int");
@@ -226,21 +244,29 @@ namespace FlightManager.Data.Migrations
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");
 
-                    b.Property<string>("FirstName")
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(18)
+                        .HasColumnType("nvarchar(18)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(18)
+                        .HasColumnType("nvarchar(18)");
 
                     b.Property<string>("Nationality")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(57)
+                        .HasColumnType("nvarchar(57)");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(130)
+                        .HasColumnType("nvarchar(130)");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
@@ -252,13 +278,31 @@ namespace FlightManager.Data.Migrations
 
                     b.Property<string>("UserName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(18)
+                        .HasColumnType("nvarchar(18)");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("CompanyID");
-
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("FlightManager.Data.Models.CompaniesUsers", b =>
+                {
+                    b.HasOne("FlightManager.Data.Models.Company", "Company")
+                        .WithMany("Users")
+                        .HasForeignKey("CompanyID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("FlightManager.Models.User", "User")
+                        .WithOne("Company")
+                        .HasForeignKey("FlightManager.Data.Models.CompaniesUsers", "UserID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Company");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("FlightManager.Data.Models.ReservationsPassangers", b =>
@@ -311,17 +355,6 @@ namespace FlightManager.Data.Migrations
                     b.Navigation("Flight");
                 });
 
-            modelBuilder.Entity("FlightManager.Models.User", b =>
-                {
-                    b.HasOne("FlightManager.Data.Models.Company", "Company")
-                        .WithMany("Users")
-                        .HasForeignKey("CompanyID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Company");
-                });
-
             modelBuilder.Entity("FlightManager.Data.Models.Company", b =>
                 {
                     b.Navigation("Fligths");
@@ -342,6 +375,12 @@ namespace FlightManager.Data.Migrations
             modelBuilder.Entity("FlightManager.Models.Reservation", b =>
                 {
                     b.Navigation("ReservationsPassangers");
+                });
+
+            modelBuilder.Entity("FlightManager.Models.User", b =>
+                {
+                    b.Navigation("Company")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

@@ -32,7 +32,8 @@ namespace FlightManager.Data.Migrations
 
                     b.HasKey("CompanyID", "UserID");
 
-                    b.HasIndex("UserID");
+                    b.HasIndex("UserID")
+                        .IsUnique();
 
                     b.ToTable("CompaniesUsers");
                 });
@@ -280,22 +281,20 @@ namespace FlightManager.Data.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("CompanyID");
-
                     b.ToTable("Users");
                 });
 
             modelBuilder.Entity("FlightManager.Data.Models.CompaniesUsers", b =>
                 {
                     b.HasOne("FlightManager.Data.Models.Company", "Company")
-                        .WithMany("CompaniesUsers")
+                        .WithMany("Users")
                         .HasForeignKey("CompanyID")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("FlightManager.Models.User", "User")
-                        .WithMany("CompaniesUsers")
-                        .HasForeignKey("UserID")
+                        .WithOne("Company")
+                        .HasForeignKey("FlightManager.Data.Models.CompaniesUsers", "UserID")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
@@ -354,21 +353,8 @@ namespace FlightManager.Data.Migrations
                     b.Navigation("Flight");
                 });
 
-            modelBuilder.Entity("FlightManager.Models.User", b =>
-                {
-                    b.HasOne("FlightManager.Data.Models.Company", "Company")
-                        .WithMany("Users")
-                        .HasForeignKey("CompanyID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Company");
-                });
-
             modelBuilder.Entity("FlightManager.Data.Models.Company", b =>
                 {
-                    b.Navigation("CompaniesUsers");
-
                     b.Navigation("Fligths");
 
                     b.Navigation("Users");
@@ -391,7 +377,8 @@ namespace FlightManager.Data.Migrations
 
             modelBuilder.Entity("FlightManager.Models.User", b =>
                 {
-                    b.Navigation("CompaniesUsers");
+                    b.Navigation("Company")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

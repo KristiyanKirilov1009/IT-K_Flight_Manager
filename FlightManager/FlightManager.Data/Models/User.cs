@@ -12,7 +12,7 @@ namespace FlightManager.Models
         {
             
         }
-        public User(string userName, string password, string firstName, string lastName, string eGN, string address, string phoneNumber, string nationality, Roles role)
+        public User(string userName, string password, string firstName, string lastName, string eGN, string address, string phoneNumber, string nationality)
         {
             UserName = userName;
             Password = password;
@@ -22,13 +22,12 @@ namespace FlightManager.Models
             Address = address;
             PhoneNumber = phoneNumber;
             Nationality = nationality;
-            Role = role;
         }
 
         [Key]
         public int ID { get; set; }
         [Required]
-        [StringLength(18, MinimumLength = 8, ErrorMessage = "Username should be at least 8 characters!")]
+        [StringLength(18, MinimumLength = 5, ErrorMessage = "Username should be at least 5 characters!")]
         public string UserName { get; set; }
         [Required]
         [StringLength(130, MinimumLength = 8, ErrorMessage = "Password should be at least 8 characters!")]
@@ -37,10 +36,10 @@ namespace FlightManager.Models
         [EmailAddress(ErrorMessage = "Invalid Email Address")]
         public string Email { get; set; }
         [Required]
-        [StringLength(18, MinimumLength = 8, ErrorMessage = "First name should be at least 8 characters!")]
+        [StringLength(18, MinimumLength = 2, ErrorMessage = "First name should be at least 2 characters!")]
         public string FirstName { get; set; }
         [Required]
-        [StringLength(18, MinimumLength = 8, ErrorMessage = "Last name should be at least 8 characters!")]
+        [StringLength(18, MinimumLength = 2, ErrorMessage = "Last name should be at least 2 characters!")]
         public string LastName { get; set; }
         [Required]
         [StringLength(10, ErrorMessage = "EGN should be at least 10 characters!")]
@@ -57,12 +56,10 @@ namespace FlightManager.Models
         [Required]
         public Roles Role { get; set; }
 
-        [ForeignKey(nameof(CompanyID))]
         public int CompanyID { get; set; }
-        public Company Company { get; set; }
 
-        public ICollection<CompaniesUsers> CompaniesUsers { get; set; }
-        
+        [ForeignKey(nameof(CompanyID))]
+        public CompaniesUsers Company { get; set; }
 
     }
 }

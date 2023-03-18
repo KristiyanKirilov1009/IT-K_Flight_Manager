@@ -1,13 +1,16 @@
 ﻿using AutoMapper;
+using AutoMapper.Configuration.Conventions;
 using FlightManager.Data.Data;
-using FlightManager.Data.Migrations;
 using FlightManager.Data.Models;
 using FlightManager.Models;
+using FlightManager.Services.DAOs;
 using FlightManager.Services.Interfaces;
 using FlightManager.Web.ViewModels.Users;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -19,6 +22,10 @@ namespace FlightManager.Services
     {
         private readonly IMapper _mapper;
         private readonly FlightContext _context;
+        private CompaniesUsers companiesUsers = new CompaniesUsers();
+        private CompanyDAO companyDAO = new CompanyDAO();
+        private UserDAO userDAO = new UserDAO();
+
 
         public UserService(IMapper mapper, FlightContext context)
         {
@@ -31,20 +38,41 @@ namespace FlightManager.Services
             User newUser = _mapper.Map<User>(user);
             newUser.Password = HashPassword(newUser.Password);
 
-            Company company = GetCompany(newUser.Company.CompanyName);
-            company.Users.Add(newUser);
-
-            GiveARole(newUser);
-
             _context.Users.Add(newUser);
             _context.SaveChanges();
+
+            var company = companyDAO.GetCompany(user.CompanyName);
+
+            if (company != null)
+            {
+                newUser.CompanyID = company.CompanyID;
+
+                _context.CompaniesUsers
+                    .Add(new CompaniesUsers()
+                    {
+                        CompanyID = company.CompanyID,
+                        UserID = newUser.ID
+                    });
+
+                _context.SaveChanges();
+
+                if (company.Users.Count == 1)
+                {
+                    GiveARole(company.CompanyID, newUser.ID, Roles.Admin);
+                }
+                else
+                {
+                    GiveARole(company.CompanyID, newUser.ID, Roles.Employee);
+                }
+            }
+
         }
 
         public bool Exist(string username)
         {
             User? user = _context.Users.Where(u => u.UserName == username).FirstOrDefault();
 
-            if(user == null)
+            if (user == null)
             {
                 return false;
             }
@@ -57,31 +85,24 @@ namespace FlightManager.Services
 
             User? user = _context.Users.Where(u => u.Password == hashedPass).FirstOrDefault();
 
-            if(user == null)
+            if (user == null)
             {
                 return false;
             }
             return true;
         }
 
-        private void GiveARole(User user)
+        private void GiveARole(int companyID, int userID, Roles role)
         {
-            if(user.Company.Users.Count == 1) 
+            var userCompany = _context.CompaniesUsers.FirstOrDefault(c => c.CompanyID == companyID && c.UserID == userID);
+            if (userCompany != null)
             {
-                user.Role = Roles.Admin;
+                userCompany.User.Role = role;
             }
-            else
-            {
-                user.Role = Roles.Employee;
-            }
+            _context.SaveChanges();
         }
 
-        private Company GetCompany(string companyName)
-        {
-            Company? company = _context.Companies.Where(c => c.CompanyName == companyName).FirstOrDefault();
 
-            return company;
-        }
         public static string HashPassword(string password)
         {
             SHA256 hash = SHA256.Create();
