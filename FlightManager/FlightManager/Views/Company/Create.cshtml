@@ -4,6 +4,7 @@
 
 <div class="loginContainer">
     <form action="#" class="loginForm" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="left-side-container">
             <label>Company name</label><br />
             <input type="text" asp-for="CompanyName"><br>

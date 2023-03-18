@@ -17,6 +17,7 @@ namespace FlightManager.Controllers
         private readonly IUserService _user;
         private FlightContext _context = new FlightContext();
 
+
         public RegisterController(IUserService user)
         {
             _user = user;
@@ -62,32 +63,6 @@ namespace FlightManager.Controllers
             return View(user);
         }
 
-        private IActionResult CustomValidation(CreateUserViewModel user)
-        {
-            if (ModelState.IsValid)
-            {
-                if (_context.Users.Any(u => u.UserName.Equals(user.UserName)))
-                {
-                    ModelState.AddModelError(string.Empty, "This user already exists!");
-                    return View(user);
-                }
-                else if (!(_context.Companies.Any(c => c.CompanyName.Equals(user.CompanyName))))
-                {
-                    ModelState.AddModelError(string.Empty, "There is no such a company!");
-                    return View(user);
-                }
-                else if (!(_context.Companies.Any(c => c.Password.Equals(user.CompanyPassword))))
-                {
-                    ModelState.AddModelError(string.Empty, "Wrong company password!");
-                    return View(user);
-                }
-                return View(user);
-            }
-            else
-            {
-                return View(user);
-            }
-        }
         private static string HashPassword(string password)
         {
             SHA256 hash = SHA256.Create();
