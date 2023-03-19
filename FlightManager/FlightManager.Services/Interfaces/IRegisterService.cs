@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace FlightManager.Services.Interfaces
 {
-    public interface IUserService
+    public interface IRegisterService
     {
         void Create(CreateUserViewModel newUser);
-        bool Exist(string username);
-        bool TruePassword(string password);
     }
 }

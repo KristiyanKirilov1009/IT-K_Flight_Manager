@@ -15,3 +15,5 @@ D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Ser
 D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Services.Mapping\obj\Debug\net6.0\refint\FlightManager.Services.Mapping.dll
 D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Services.Mapping\obj\Debug\net6.0\FlightManager.Services.Mapping.pdb
 D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Services.Mapping\obj\Debug\net6.0\ref\FlightManager.Services.Mapping.dll
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Services.Mapping\bin\Debug\net6.0\FlightManager.Services.Mapping.runtimeconfig.json
+D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Services.Mapping\obj\Debug\net6.0\FlightManager.Services.Mapping.genruntimeconfig.cache

@@ -1,10 +1,14 @@
-﻿using FlightManager.Data.Data;
+﻿using AutoMapper.Configuration.Conventions;
+using FlightManager.Data.Data;
 using FlightManager.Data.Models;
+using FlightManager.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace FlightManager.Services.DAOs
 {
@@ -31,10 +35,10 @@ namespace FlightManager.Services.DAOs
                                                                 && u.CompanyID.Equals(companyID)).FirstOrDefault();
         }
 
-        public void AddToCompaniesUsers(CompaniesUsers cu)
+        public List<User> GetUsersInCompany(int companyID)
         {
-            context.CompaniesUsers.Add(cu);
-            context.SaveChanges();
+           return context.CompaniesUsers.Include(x => x.User)
+                .Where(c => c.CompanyID.Equals(companyID)).Select(y => y.User).ToList();
         }
     }
 }

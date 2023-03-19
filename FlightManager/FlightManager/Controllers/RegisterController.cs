@@ -14,13 +14,13 @@ namespace FlightManager.Controllers
 {
     public class RegisterController : Controller
     {
-        private readonly IUserService _user;
+        private readonly IRegisterService _register;
         private FlightContext _context = new FlightContext();
 
 
-        public RegisterController(IUserService user)
+        public RegisterController(IRegisterService user)
         {
-            _user = user;
+            _register = user;
         }
 
         public IActionResult Index()
@@ -56,7 +56,7 @@ namespace FlightManager.Controllers
                 }
                 else
                 {
-                    _user.Create(user);
+                    _register.Create(user);
                     return RedirectToAction("Index", "Home");
                 }
             }

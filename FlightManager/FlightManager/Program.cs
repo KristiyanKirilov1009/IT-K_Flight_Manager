@@ -19,7 +19,7 @@ builder.Services.AddAutoMapper(cfg =>
     cfg.AddProfile<FlightManagerProfile>();
 });
 
-builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<IRegisterService, RegisterService>();
 builder.Services.AddTransient<ICompanyService, CompanyService>();
 
 

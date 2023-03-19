@@ -1,5 +1,6 @@
 ﻿using FlightManager.Data.Data;
 using FlightManager.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,10 +9,9 @@ using System.Threading.Tasks;
 
 namespace FlightManager.Services.DAOs
 {
-    public class UserDAO
+    public class RegisterDAO
     {
-        public User currentUser { get; set; }
-        private  FlightContext context = new FlightContext();
+        private FlightContext context = new FlightContext();
 
         public User GetUserByID(int id)
         {

@@ -18,16 +18,16 @@ using System.Threading.Tasks;
 
 namespace FlightManager.Services
 {
-    public class UserService : IUserService
+    public class RegisterService : IRegisterService
     {
         private readonly IMapper _mapper;
         private readonly FlightContext _context;
-        private CompaniesUsers companiesUsers = new CompaniesUsers();
+        //private CompaniesUsers companiesUsers = new CompaniesUsers();
         private CompanyDAO companyDAO = new CompanyDAO();
-        private UserDAO userDAO = new UserDAO();
+        private RegisterDAO registerDAO = new RegisterDAO();
 
 
-        public UserService(IMapper mapper, FlightContext context)
+        public RegisterService(IMapper mapper, FlightContext context)
         {
             _mapper = mapper;
             _context = context;
@@ -42,6 +42,7 @@ namespace FlightManager.Services
             _context.SaveChanges();
 
             var company = companyDAO.GetCompany(user.CompanyName);
+            var users = companyDAO.GetUsersInCompany(company.CompanyID).ToList();
 
             if (company != null)
             {
@@ -56,7 +57,10 @@ namespace FlightManager.Services
 
                 _context.SaveChanges();
 
-                if (company.Users.Count == 1)
+                
+
+
+                if (users.Count == 0)
                 {
                     GiveARole(company.CompanyID, newUser.ID, Roles.Admin);
                 }
@@ -66,30 +70,6 @@ namespace FlightManager.Services
                 }
             }
 
-        }
-
-        public bool Exist(string username)
-        {
-            User? user = _context.Users.Where(u => u.UserName == username).FirstOrDefault();
-
-            if (user == null)
-            {
-                return false;
-            }
-            return true;
-        }
-
-        public bool TruePassword(string password)
-        {
-            string hashedPass = HashPassword(password);
-
-            User? user = _context.Users.Where(u => u.Password == hashedPass).FirstOrDefault();
-
-            if (user == null)
-            {
-                return false;
-            }
-            return true;
         }
 
         private void GiveARole(int companyID, int userID, Roles role)

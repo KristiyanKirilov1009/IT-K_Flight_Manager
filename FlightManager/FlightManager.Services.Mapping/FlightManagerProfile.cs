@@ -17,6 +17,7 @@ namespace FlightManager.Services.Mapping
         {
             CreateMap<CreateUserViewModel, User>();
             CreateMap<CreateCompanyViewModel, Company>();
+            CreateMap<LoginViewModel, User>();
         }
     }
 }
