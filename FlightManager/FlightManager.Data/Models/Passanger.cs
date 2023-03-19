@@ -7,7 +7,7 @@ namespace FlightManager.Models
 {
     public class Passanger
     {
-        public Passanger(string firstName, string middleName, string lastName, string eGN, string phoneNumber, string nationality, TicketTypes ticketType)
+        public Passanger(string firstName, string middleName, string lastName, string eGN, string phoneNumber, string nationality, TicketType ticketType)
         {
             FirstName = firstName;
             MiddleName = middleName;
@@ -35,7 +35,7 @@ namespace FlightManager.Models
         [Required]
         public string Nationality { get; set; }
         [Required]
-        public TicketTypes TicketType { get; set; }
+        public TicketType TicketType { get; set; }
         [ForeignKey(nameof(ReservationID))]
         public int ReservationID { get; set; }
         public Reservation? Reservation { get; set; }

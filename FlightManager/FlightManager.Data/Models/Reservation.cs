@@ -13,7 +13,7 @@ namespace FlightManager.Models
             ReservationsPassangers = new HashSet<ReservationsPassangers>();
         }
 
-        public Reservation(string firstName, string middleName, string lastName, string eGN, string phoneNumber, string nationality, TicketTypes ticketType)
+        public Reservation(string firstName, string middleName, string lastName, int eGN, int phoneNumber, string nationality, TicketType ticketType)
         {
             FirstName = firstName;
             MiddleName = middleName;
@@ -34,13 +34,13 @@ namespace FlightManager.Models
         public string LastName { get; set; }
         [Required]
         [MaxLength(10)]
-        public string EGN { get; set; }
+        public int EGN { get; set; }
         [Required]
         [MaxLength(10)]
-        public string PhoneNumber { get; set; }
+        public int PhoneNumber { get; set; }
         [Required]
         public string Nationality { get; set; }
-        public TicketTypes TicketType { get; set; }
+        public TicketType TicketType { get; set; }
 
         [ForeignKey(nameof(FlightID))]
         public int? FlightID { get; set; }

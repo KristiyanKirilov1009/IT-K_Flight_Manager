@@ -1,6 +1,6 @@
 ﻿namespace FlightManager.Models
 {
-    public enum TicketTypes
+    public enum TicketType
     {
         Business, Normal
     }

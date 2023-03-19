@@ -9629,24 +9629,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager.Services\\FlightManager.Services.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Services\\FlightManager.Services.csproj",
       "projectName": "FlightManager.Services",
-      "projectPath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager.Services\\FlightManager.Services.csproj",
-      "packagesPath": "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\",
-      "outputPath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager.Services\\obj\\",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Services\\FlightManager.Services.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Services\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Kristiyan Kirilov\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9660,11 +9655,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj": {
-              "projectPath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj"
+            "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Data\\FlightManager.Data.csproj"
             },
-            "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager.Web.ViewModels\\FlightManager.Web.ViewModels.csproj": {
-              "projectPath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager.Web.ViewModels\\FlightManager.Web.ViewModels.csproj"
+            "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Web.ViewModels\\FlightManager.Web.ViewModels.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager.Web.ViewModels\\FlightManager.Web.ViewModels.csproj"
             }
           }
         }
@@ -9718,7 +9713,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
