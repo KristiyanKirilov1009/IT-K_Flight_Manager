@@ -1,0 +1,21 @@
+﻿@using FlightManager.Web.ViewModels.Flights;
+@model ReservationViewModel;
+
+<div class="loginContainer">
+    <form action="#" class="loginForm">
+        <div class="FormContainer" style="width:100%">
+            <label>FirstName</label>
+            <input type="text" asp-for="FirstName"><br>
+            <label>MiddleName</label>
+            <input type="text" asp-for="MiddleName"><br>
+            <label>LastName</label>
+            <input type="text" asp-for="LastName"><br>
+            <label>EGN</label>
+            <input type="password" asp-for="EGN"><br>
+            <label>PhoneNummber</label>
+
+            <a asp-controller="Register" asp-action="Create" style="color:#FFF">Don't have an account?</a>
+            <button type="submit" asp-controller="Login" asp-action="LogIn" class="btn btn-primary">Login</button>
+        </div><br>
+    </form>
+</div>

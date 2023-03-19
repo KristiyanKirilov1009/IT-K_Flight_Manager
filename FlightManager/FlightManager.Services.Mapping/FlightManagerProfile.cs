@@ -3,6 +3,7 @@ using FlightManager.Data.Models;
 using FlightManager.Models;
 using FlightManager.Web.ViewModels.Companies;
 using FlightManager.Web.ViewModels.Users;
+using FlightManager.Web.ViewModels.Flights;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,7 @@ namespace FlightManager.Services.Mapping
         {
             CreateMap<CreateUserViewModel, User>();
             CreateMap<CreateCompanyViewModel, Company>();
+            CreateMap<ReservationViewModel, Reservation>();
         }
     }
 }

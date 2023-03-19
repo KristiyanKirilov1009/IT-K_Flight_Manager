@@ -10,3 +10,15 @@ D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Web
 D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Web.ViewModels\obj\Debug\net6.0\refint\FlightManager.Web.ViewModels.dll
 D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Web.ViewModels\obj\Debug\net6.0\FlightManager.Web.ViewModels.pdb
 D:\IT кариера\EXAM_Module13\FlightManager\FlightManager\FlightManager.Web.ViewModels\obj\Debug\net6.0\ref\FlightManager.Web.ViewModels.dll
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager.Web.ViewModels\bin\Debug\net6.0\FlightManager.Web.ViewModels.deps.json
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager.Web.ViewModels\bin\Debug\net6.0\FlightManager.Web.ViewModels.dll
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager.Web.ViewModels\bin\Debug\net6.0\FlightManager.Web.ViewModels.pdb
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager.Web.ViewModels\obj\Debug\net6.0\FlightManager.Web.ViewModels.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager.Web.ViewModels\obj\Debug\net6.0\FlightManager.Web.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager.Web.ViewModels\obj\Debug\net6.0\FlightManager.Web.ViewModels.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager.Web.ViewModels\obj\Debug\net6.0\FlightManager.Web.ViewModels.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager.Web.ViewModels\obj\Debug\net6.0\FlightManager.Web.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager.Web.ViewModels\obj\Debug\net6.0\FlightManager.Web.ViewModels.dll
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager.Web.ViewModels\obj\Debug\net6.0\refint\FlightManager.Web.ViewModels.dll
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager.Web.ViewModels\obj\Debug\net6.0\FlightManager.Web.ViewModels.pdb
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager.Web.ViewModels\obj\Debug\net6.0\ref\FlightManager.Web.ViewModels.dll

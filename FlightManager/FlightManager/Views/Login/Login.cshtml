@@ -1,0 +1,20 @@
+﻿@using FlightManager.Web.ViewModels.Users;
+@model LoginViewModel
+
+<div class="loginContainer">
+    <form action="#" class="loginForm">
+        <div class="leftFormContainer" style="width:100%">
+                <label>Username</label>
+                <input type ="text" asp-for="UserName"><br>
+                <label>Password</label>
+                <input type="password" asp-for="Password"><br>
+                <label>Company name</label>
+                <input type="text" asp-for="CompanyName"><br>
+                <label>Company password</label>
+                <input type="password" asp-for="CompanyPassword"><br>
+            <a asp-controller="Register" asp-action="Create" style="color:#FFF">Don't have an account?</a>
+            <button type="submit" asp-controller="Login" asp-action="LogIn" class="btn btn-primary">Login</button>
+            </div><br>
+    </form>
+</div>
+
