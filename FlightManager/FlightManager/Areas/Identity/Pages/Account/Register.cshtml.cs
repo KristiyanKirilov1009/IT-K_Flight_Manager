@@ -144,14 +144,17 @@ namespace Test.Areas.Identity.Pages.Account
                 user.UCN = Input.UCN;
                 user.Address = Input.Address;
 
-                if(!(_applicationDbContext.Users.Any()))
+                if (!(_applicationDbContext.Users.Any()))
                 {
                     user.Role = "Administrator";
+                    await _userManager.AddToRoleAsync(user, "Administrator");
                 }
                 else
                 {
                     user.Role = "Employee";
+                    await _userManager.AddToRoleAsync(user, "Employee");
                 }
+
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
@@ -185,7 +188,7 @@ namespace Test.Areas.Identity.Pages.Account
                         return LocalRedirect(returnUrl);
                     }
                 }
-                
+
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);

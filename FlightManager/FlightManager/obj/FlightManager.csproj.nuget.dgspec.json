@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IT кариера\\New folder (2)\\FlightManager\\FlightManager\\FlightManager.csproj": {}
+    "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj": {}
   },
   "projects": {
-    "D:\\IT кариера\\New folder (2)\\FlightManager\\FlightManager\\FlightManager.csproj": {
+    "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IT кариера\\New folder (2)\\FlightManager\\FlightManager\\FlightManager.csproj",
+        "projectUniqueName": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj",
         "projectName": "FlightManager",
-        "projectPath": "D:\\IT кариера\\New folder (2)\\FlightManager\\FlightManager\\FlightManager.csproj",
+        "projectPath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj",
         "packagesPath": "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\",
-        "outputPath": "D:\\IT кариера\\New folder (2)\\FlightManager\\FlightManager\\obj\\",
+        "outputPath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,6 +69,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.13, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.4.2, )"
             }
           },
           "imports": [

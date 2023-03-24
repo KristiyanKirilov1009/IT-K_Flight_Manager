@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "juMTEFeq7NZXEfJpD24uCYebl6DPNbIN8bFe91RJU6RhRgQhZkgjBfZFl8WxQC2houHnPA7HIRlyk3Ld7UI0og==",
+  "dgSpecHash": "kbmZVvBKPyJVrX+Z6f2ax6Sz+16OHMJuczHYku6dvyUj5pH8gdoi7DVirMH4qHnc5yxm+QZHvhRDsi3NnhEkKw==",
   "success": true,
-  "projectFilePath": "D:\\IT кариера\\New folder (2)\\FlightManager\\FlightManager\\FlightManager.csproj",
+  "projectFilePath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
@@ -184,7 +184,9 @@
     "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512"
   ],
   "logs": []
 }
