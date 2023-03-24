@@ -32,6 +32,7 @@ namespace Test.Areas.Identity.Pages.Account
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
         private readonly ApplicationDbContext _applicationDbContext;
+        private readonly RoleManager<IdentityRole> _roleManager;  
 
         public RegisterModel(
             UserManager<ApplicationUser> userManager,
@@ -39,7 +40,8 @@ namespace Test.Areas.Identity.Pages.Account
             SignInManager<ApplicationUser> signInManager,
             ILogger<RegisterModel> logger,
             IEmailSender emailSender,
-            ApplicationDbContext applicationDbContext
+            ApplicationDbContext applicationDbContext,
+            RoleManager<IdentityRole> roleManager
             )
         {
             _userManager = userManager;
@@ -49,6 +51,7 @@ namespace Test.Areas.Identity.Pages.Account
             _logger = logger;
             _emailSender = emailSender;
             _applicationDbContext = applicationDbContext;
+            _roleManager = roleManager;
         }
 
         /// <summary>
@@ -128,6 +131,11 @@ namespace Test.Areas.Identity.Pages.Account
 
         public async Task OnGetAsync(string returnUrl = null)
         {
+            if (!_roleManager.RoleExistsAsync("Administrator").GetAwaiter().GetResult())
+            {
+                _roleManager.CreateAsync(new IdentityRole("Administrator")).GetAwaiter().GetResult();
+                _roleManager.CreateAsync(new IdentityRole("Employee")).GetAwaiter().GetResult();
+            }
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }

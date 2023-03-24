@@ -22,6 +22,8 @@ namespace Test
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
 
+            //builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders().AddEntityFrameworkStores<ApplicationDbContext>(); 
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

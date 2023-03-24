@@ -2,98 +2,98 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Test.Data;
 using Test.Models;
 
-namespace Test.Controllers
+namespace FlightManager.Controllers
 {
-    public class FlightController : Controller
+    public class ReservationController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public FlightController(ApplicationDbContext context)
+        public ReservationController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Flight
+        // GET: Reservation
         public async Task<IActionResult> Index()
         {
-              return _context.Flights != null ? 
-                          View(await _context.Flights.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Flights'  is null.");
+            var applicationDbContext = _context.Reservations.Include(r => r.Flight);
+            return View(await applicationDbContext.ToListAsync());
         }
-        [Authorize]
-        // GET: Flight/Details/5
+
+        // GET: Reservation/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Flights == null)
+            if (id == null || _context.Reservations == null)
             {
                 return NotFound();
             }
 
-            var flight = await _context.Flights
+            var reservation = await _context.Reservations
+                .Include(r => r.Flight)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (flight == null)
+            if (reservation == null)
             {
                 return NotFound();
             }
 
-            return View(flight);
+            return View(reservation);
         }
-        [Authorize]
-        // GET: Flight/Create
+
+
+        // GET: Reservation/Create
         public IActionResult Create()
         {
+            ViewData["FlightId"] = new SelectList(_context.Flights, "Id", "Id");
             return View();
         }
 
-        // POST: Flight/Create
+        // POST: Reservation/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,LocationFrom,LocationTo,TakeOff,Landing,PlaneType,PlaneNumber,PilotName,PassangerCapacity,BussinessClassCapacity")] Flight flight)
+        public async Task<IActionResult> Create([Bind("Id,Email,FlightId")] Reservation reservation)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(flight);
+                _context.Add(reservation);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(flight);
+            return View(reservation);
         }
-        [Authorize]
-        // GET: Flight/Edit/5
+
+        // GET: Reservation/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Flights == null)
+            if (id == null || _context.Reservations == null)
             {
                 return NotFound();
             }
 
-            var flight = await _context.Flights.FindAsync(id);
-            if (flight == null)
+            var reservation = await _context.Reservations.FindAsync(id);
+            if (reservation == null)
             {
                 return NotFound();
             }
-            return View(flight);
+            ViewData["FlightId"] = new SelectList(_context.Flights, "Id", "Id", reservation.FlightId);
+            return View(reservation);
         }
 
-        // POST: Flight/Edit/5
+        // POST: Reservation/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,LocationFrom,LocationTo,TakeOff,Landing,PlaneType,PlaneNumber,PilotName,PassangerCapacity,BussinessClassCapacity")] Flight flight)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,FlightId")] Reservation reservation)
         {
-            if (id != flight.Id)
+            if (id != reservation.Id)
             {
                 return NotFound();
             }
@@ -102,12 +102,12 @@ namespace Test.Controllers
             {
                 try
                 {
-                    _context.Update(flight);
+                    _context.Update(reservation);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!FlightExists(flight.Id))
+                    if (!ReservationExists(reservation.Id))
                     {
                         return NotFound();
                     }
@@ -118,50 +118,51 @@ namespace Test.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(flight);
+            ViewData["FlightId"] = new SelectList(_context.Flights, "Id", "Id", reservation.FlightId);
+            return View(reservation);
         }
-        [Authorize]
-        // GET: Flight/Delete/5
+
+        // GET: Reservation/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Flights == null)
+            if (id == null || _context.Reservations == null)
             {
                 return NotFound();
             }
 
-            var flight = await _context.Flights
+            var reservation = await _context.Reservations
+                .Include(r => r.Flight)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (flight == null)
+            if (reservation == null)
             {
                 return NotFound();
             }
 
-            return View(flight);
+            return View(reservation);
         }
 
-        // POST: Flight/Delete/5
-        [Authorize]
+        // POST: Reservation/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Flights == null)
+            if (_context.Reservations == null)
             {
-                return Problem("Entity set 'ApplicationDbContext.Flights'  is null.");
+                return Problem("Entity set 'ApplicationDbContext.Reservations'  is null.");
             }
-            var flight = await _context.Flights.FindAsync(id);
-            if (flight != null)
+            var reservation = await _context.Reservations.FindAsync(id);
+            if (reservation != null)
             {
-                _context.Flights.Remove(flight);
+                _context.Reservations.Remove(reservation);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool FlightExists(int id)
+        private bool ReservationExists(int id)
         {
-          return (_context.Flights?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.Reservations?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }
