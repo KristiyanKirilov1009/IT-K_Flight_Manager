@@ -279,7 +279,7 @@ namespace Test.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Flights");
+                    b.ToTable("Flights", (string)null);
                 });
 
             modelBuilder.Entity("Test.Models.Passenger", b =>
@@ -321,7 +321,7 @@ namespace Test.Data.Migrations
 
                     b.HasIndex("ReservationId");
 
-                    b.ToTable("Passengers");
+                    b.ToTable("Passengers", (string)null);
                 });
 
             modelBuilder.Entity("Test.Models.Reservation", b =>
@@ -346,7 +346,7 @@ namespace Test.Data.Migrations
 
                     b.HasIndex("FlightId");
 
-                    b.ToTable("Reservations");
+                    b.ToTable("Reservations", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
