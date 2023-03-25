@@ -11,7 +11,6 @@ using Test.Models;
 
 namespace Test.Controllers
 {
-    [Authorize(Roles = "Administrator,Employee")]
     public class FlightController : Controller
     {
         private readonly ApplicationDbContext _context;
