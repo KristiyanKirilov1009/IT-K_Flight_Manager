@@ -8,15 +8,15 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using FlightManager.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using Test.Models;
 
-namespace Test.Areas.Identity.Pages.Account
+namespace FlightManager.Areas.Identity.Pages.Account
 {
     public class LoginModel : PageModel
     {

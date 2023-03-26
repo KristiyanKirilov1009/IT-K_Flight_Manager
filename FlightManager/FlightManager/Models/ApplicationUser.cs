@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace Test.Models
+namespace FlightManager.Models
 {
     public class ApplicationUser : IdentityUser
     {
@@ -9,6 +9,5 @@ namespace Test.Models
         public string? UCN { get; set; }
         public string? Address { get; set; }
         public string? Role { get; set; }
-
     }
 }

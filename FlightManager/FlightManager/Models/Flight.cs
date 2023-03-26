@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Test.Models
+namespace FlightManager.Models
 {
     public class Flight
     {

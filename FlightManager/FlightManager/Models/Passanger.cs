@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Test.Models
+namespace FlightManager.Models
 {
-    public class Passenger
+    public class Passanger
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

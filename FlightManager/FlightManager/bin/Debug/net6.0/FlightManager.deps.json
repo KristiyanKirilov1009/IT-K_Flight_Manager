@@ -8,13 +8,12 @@
     ".NETCoreApp,Version=v6.0": {
       "FlightManager/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.13",
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.14",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.15",
           "Microsoft.AspNetCore.Identity.UI": "6.0.15",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.15",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.15",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.13",
-          "xunit.extensibility.core": "2.4.2"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.13"
         },
         "runtime": {
           "FlightManager.dll": {}
@@ -73,14 +72,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.13": {
+      "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.14": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "6.0.15"
         },
         "runtime": {
           "lib/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll": {
-            "assemblyVersion": "6.0.13.0",
-            "fileVersion": "6.0.1322.58013"
+            "assemblyVersion": "6.0.14.0",
+            "fileVersion": "6.0.1423.7403"
           }
         }
       },
@@ -2354,26 +2353,6 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
-      },
-      "xunit.abstractions/2.0.3": {
-        "runtime": {
-          "lib/netstandard2.0/xunit.abstractions.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
-          }
-        }
-      },
-      "xunit.extensibility.core/2.4.2": {
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "xunit.abstractions": "2.0.3"
-        },
-        "runtime": {
-          "lib/netstandard1.1/xunit.core.dll": {
-            "assemblyVersion": "2.4.2.0",
-            "fileVersion": "2.4.2.0"
-          }
-        }
       }
     }
   },
@@ -2425,12 +2404,12 @@
       "path": "microsoft.aspnetcore.cryptography.keyderivation/6.0.15",
       "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.6.0.15.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.13": {
+    "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore/6.0.14": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-SBLKxcfCDLwaDmWJNsGqDvDnkHxIGXKmZvh6r8wqE0wxYtGyBx+LJuOqLGqL+SrFVaUC0lAdYbixfGHokHEexw==",
-      "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/6.0.13",
-      "hashPath": "microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.13.nupkg.sha512"
+      "sha512": "sha512-72MfWzruSneHITADt6AlnrFE4oJdmElj9DXoVzD4f02nV97U51ZgXWj7vuf0rLofLAlLXHg1v0x+4yHD7Gi/4Q==",
+      "path": "microsoft.aspnetcore.diagnostics.entityframeworkcore/6.0.14",
+      "hashPath": "microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.14.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.15": {
       "type": "package",
@@ -3649,20 +3628,6 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
-    },
-    "xunit.abstractions/2.0.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg==",
-      "path": "xunit.abstractions/2.0.3",
-      "hashPath": "xunit.abstractions.2.0.3.nupkg.sha512"
-    },
-    "xunit.extensibility.core/2.4.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-W1BoXTIN1C6kpVSMw25huSet25ky6IAQUNovu3zGOGN/jWnbgSoTyCrlIhmXSg0tH5nEf8q7h3OjNHOjyu5PfA==",
-      "path": "xunit.extensibility.core/2.4.2",
-      "hashPath": "xunit.extensibility.core.2.4.2.nupkg.sha512"
     }
   }
 }

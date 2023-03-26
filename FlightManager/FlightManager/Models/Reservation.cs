@@ -1,15 +1,13 @@
-﻿using Microsoft.AspNetCore.Authorization.Infrastructure;
-using NuGet.Protocol;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Test.Models
+namespace FlightManager.Models
 {
     public class Reservation
     {
         public Reservation()
         {
-            Passengers = new HashSet<Passenger>();
+            Passangers = new HashSet<Passanger>();
         }
 
         public int Id { get; set; }
@@ -20,7 +18,6 @@ namespace Test.Models
         [ForeignKey("FlightId")]
         public Flight Flight { get; set; }
 
-        public ICollection<Passenger> Passengers { get; set; }
+        public ICollection<Passanger> Passangers { get; set; }
     }
 }
-

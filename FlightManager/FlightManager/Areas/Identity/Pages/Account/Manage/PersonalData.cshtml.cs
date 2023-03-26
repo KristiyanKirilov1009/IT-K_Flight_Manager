@@ -2,13 +2,13 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 using System;
 using System.Threading.Tasks;
+using FlightManager.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using Test.Models;
 
-namespace Test.Areas.Identity.Pages.Account.Manage
+namespace FlightManager.Areas.Identity.Pages.Account.Manage
 {
     public class PersonalDataModel : PageModel
     {

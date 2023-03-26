@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Test.Data;
-using Test.Models;
+using FlightManager.Data;
+using FlightManager.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
-namespace Test.Controllers
+namespace FlightManager.Controllers
 {
-    [Authorize(Roles = "Administrator,Employee")]
+    [Authorize]
     public class FlightController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -24,13 +25,13 @@ namespace Test.Controllers
         // GET: Flight
         public async Task<IActionResult> Index()
         {
-              return _context.Flights != null ? 
-                          View(await _context.Flights.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Flights'  is null.");
+            return _context.Flights != null ?
+                        View(await _context.Flights.ToListAsync()) :
+                        Problem("Entity set 'ApplicationDbContext.Flights'  is null.");
         }
 
         // GET: Flight/Details/5
-        [Authorize(Roles = "Administrator")]
+        [Authorize(Roles = "Administrator, Employee")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Flights == null)
@@ -158,14 +159,14 @@ namespace Test.Controllers
             {
                 _context.Flights.Remove(flight);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool FlightExists(int id)
         {
-          return (_context.Flights?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Flights?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

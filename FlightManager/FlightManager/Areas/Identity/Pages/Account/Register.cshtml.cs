@@ -12,16 +12,16 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using FlightManager.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
-using Test.Data;
-using Test.Models;
+using FlightManager.Data;
 
-namespace Test.Areas.Identity.Pages.Account
+namespace FlightManager.Areas.Identity.Pages.Account
 {
     public class RegisterModel : PageModel
     {
@@ -32,7 +32,8 @@ namespace Test.Areas.Identity.Pages.Account
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
         private readonly ApplicationDbContext _applicationDbContext;
-        private readonly RoleManager<IdentityRole> _roleManager;  
+        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly ApplicationDbContext _context;
 
         public RegisterModel(
             UserManager<ApplicationUser> userManager,
@@ -41,7 +42,8 @@ namespace Test.Areas.Identity.Pages.Account
             ILogger<RegisterModel> logger,
             IEmailSender emailSender,
             ApplicationDbContext applicationDbContext,
-            RoleManager<IdentityRole> roleManager
+            RoleManager<IdentityRole> roleManager,
+            ApplicationDbContext context
             )
         {
             _userManager = userManager;
@@ -52,6 +54,7 @@ namespace Test.Areas.Identity.Pages.Account
             _emailSender = emailSender;
             _applicationDbContext = applicationDbContext;
             _roleManager = roleManager;
+            _context = context;
         }
 
         /// <summary>
@@ -163,6 +166,7 @@ namespace Test.Areas.Identity.Pages.Account
                     await _userManager.AddToRoleAsync(user, "Employee");
                 }
 
+                _context.ApplicationUsers.Add(user);
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);

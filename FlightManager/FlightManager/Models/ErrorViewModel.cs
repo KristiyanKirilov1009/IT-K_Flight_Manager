@@ -1,4 +1,4 @@
-namespace Test.Models
+namespace FlightManager.Models
 {
     public class ErrorViewModel
     {

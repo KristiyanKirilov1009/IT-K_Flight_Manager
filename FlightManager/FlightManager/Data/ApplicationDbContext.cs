@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using FlightManager.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Test.Models;
 
-namespace Test.Data
+namespace FlightManager.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
@@ -11,9 +11,9 @@ namespace Test.Data
         {
         }
 
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         public DbSet<Flight> Flights { get; set; }
-        public DbSet<Passenger> Passengers { get; set; }
+        public DbSet<Passanger> Passengers { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
-
     }
 }

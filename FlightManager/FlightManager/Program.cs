@@ -1,9 +1,9 @@
+using FlightManager.Data;
+using FlightManager.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Test.Data;
-using Test.Models;
 
-namespace Test
+namespace FlightManager
 {
     public class Program
     {
@@ -21,8 +21,6 @@ namespace Test
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
-
-            //builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders().AddEntityFrameworkStores<ApplicationDbContext>(); 
 
             var app = builder.Build();
 
