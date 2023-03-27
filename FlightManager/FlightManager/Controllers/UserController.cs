@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FlightManager.Models.ViewModels;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace FlightManager.Controllers
 {
@@ -12,10 +13,12 @@ namespace FlightManager.Controllers
     public class UserController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public UserController(ApplicationDbContext context)
+        public UserController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         [Authorize(Roles = "Administrator")]
@@ -118,16 +121,47 @@ namespace FlightManager.Controllers
         {
             if (ModelState.IsValid)
             {
+
+                var currentUserName = HttpContext.User.Identity.Name;
+                ApplicationUser currentUser = _context.ApplicationUsers.Where(cu => cu.UserName == currentUserName).FirstOrDefault();
+                string currentUserRole = currentUser.Role;
                 ApplicationUser user = _context.ApplicationUsers.Where(u => u.UCN == model.UCN).FirstOrDefault();
+                var userRole = _context.UserRoles.Where(ur => ur.UserId == user.Id).FirstOrDefault();
                 if (user != null)
                 {
                     user.FirstName = model.FirstName;
                     user.LastName = model.LastName;
                     user.UCN = model.UCN;
                     user.Address = model.Address;
-                    user.Role = model.Role;
                     
-                    await _context.SaveChangesAsync();
+
+
+                    //await _context.SaveChangesAsync();
+                    if (currentUser.FirstName == user.FirstName)
+                    {
+                        _context.SaveChanges();
+                    }
+                    else if (currentUser.FirstName != user.FirstName)
+                    {
+                        //Role Chnage
+                        user.Role = model.Role;
+                        var newUserRole = userRole;
+
+                        _context.Remove(userRole);
+                        await _context.SaveChangesAsync();
+
+                        if (model.Role == "Administrator")
+                        {
+                            newUserRole.RoleId = "5a12a8e1-63e4-4523-818e-ed97f9bd9f62";
+                        }
+                        else if (model.Role == "Employee")
+                        {
+                            newUserRole.RoleId = "034e77a1-b74b-4f89-bacf-8f9ede5419d7";
+                        }
+                        _context.Add(newUserRole);
+
+                        await _context.SaveChangesAsync();
+                    }
 
                     return RedirectToAction("Index", "User");
 
