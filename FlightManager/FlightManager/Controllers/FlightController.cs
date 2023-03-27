@@ -12,7 +12,6 @@ using System.Data;
 
 namespace FlightManager.Controllers
 {
-    [Authorize]
     public class FlightController : Controller
     {
         private readonly ApplicationDbContext _context;

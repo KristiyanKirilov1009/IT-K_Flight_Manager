@@ -7,12 +7,9 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using FlightManager.Data;
 using FlightManager.Models;
-using Microsoft.AspNetCore.Authorization;
-using System.Data;
 
 namespace FlightManager.Controllers
 {
-    [Authorize(Roles = "Administrator,Employee")]
     public class ReservationController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -30,7 +27,6 @@ namespace FlightManager.Controllers
         }
 
         // GET: Reservation/Details/5
-        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Reservations == null)
@@ -49,9 +45,7 @@ namespace FlightManager.Controllers
             return View(reservation);
         }
 
-
         // GET: Reservation/Create
-        [Authorize(Roles = "Administrator")]
         public IActionResult Create()
         {
             ViewData["FlightId"] = new SelectList(_context.Flights, "Id", "Id");
@@ -61,7 +55,6 @@ namespace FlightManager.Controllers
         // POST: Reservation/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [Authorize(Roles = "Administrator")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Email,FlightId")] Reservation reservation)
@@ -72,11 +65,11 @@ namespace FlightManager.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["FlightId"] = new SelectList(_context.Flights, "Id", "Id", reservation.FlightId);
             return View(reservation);
         }
 
         // GET: Reservation/Edit/5
-        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Reservations == null)
@@ -96,10 +89,9 @@ namespace FlightManager.Controllers
         // POST: Reservation/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [Authorize(Roles = "Administrator")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,FlightId")] Reservation reservation)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Email,FlightId")] Reservation reservation)
         {
             if (id != reservation.Id)
             {
@@ -131,7 +123,6 @@ namespace FlightManager.Controllers
         }
 
         // GET: Reservation/Delete/5
-        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Reservations == null)
@@ -151,7 +142,6 @@ namespace FlightManager.Controllers
         }
 
         // POST: Reservation/Delete/5
-        [Authorize(Roles = "Administrator")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -165,14 +155,14 @@ namespace FlightManager.Controllers
             {
                 _context.Reservations.Remove(reservation);
             }
-
+            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ReservationExists(int id)
         {
-            return (_context.Reservations?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.Reservations?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

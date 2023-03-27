@@ -76,6 +76,10 @@ namespace FlightManager.Data.Migrations
                     b.Property<string>("Role")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("SecondaryId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -142,7 +146,7 @@ namespace FlightManager.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Flights");
+                    b.ToTable("Flights", (string)null);
                 });
 
             modelBuilder.Entity("FlightManager.Models.Passanger", b =>
@@ -184,7 +188,7 @@ namespace FlightManager.Data.Migrations
 
                     b.HasIndex("ReservationId");
 
-                    b.ToTable("Passengers");
+                    b.ToTable("Passengers", (string)null);
                 });
 
             modelBuilder.Entity("FlightManager.Models.Reservation", b =>
@@ -206,7 +210,7 @@ namespace FlightManager.Data.Migrations
 
                     b.HasIndex("FlightId");
 
-                    b.ToTable("Reservations");
+                    b.ToTable("Reservations", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
