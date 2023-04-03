@@ -7,15 +7,20 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using FlightManager.Data;
 using FlightManager.Models;
+using FlightManager.Models.ViewModels;
+using AutoMapper;
 
 namespace FlightManager.Controllers
 {
     public class ReservationController : Controller
     {
+        
         private readonly ApplicationDbContext _context;
+        private readonly IMapper _mapper;
 
-        public ReservationController(ApplicationDbContext context)
+        public ReservationController(IMapper mapper, ApplicationDbContext context)
         {
+            _mapper = mapper;
             _context = context;
         }
 
@@ -49,6 +54,8 @@ namespace FlightManager.Controllers
         public IActionResult Create()
         {
             ViewData["FlightId"] = new SelectList(_context.Flights, "Id", "Id");
+            var flightList = _context.Flights.ToList();
+            ViewBag.List = flightList;
             return View();
         }
 
@@ -57,16 +64,18 @@ namespace FlightManager.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Email,FlightId")] Reservation reservation)
+        public async Task<IActionResult> Create(ReservationViewModel model)
         {
             if (ModelState.IsValid)
             {
+                Reservation reservation = _mapper.Map<Reservation>(model);
+
                 _context.Add(reservation);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+
+                return View("~/View/Passanger/Create.cshtml ");
             }
-            ViewData["FlightId"] = new SelectList(_context.Flights, "Id", "Id", reservation.FlightId);
-            return View(reservation);
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Reservation/Edit/5

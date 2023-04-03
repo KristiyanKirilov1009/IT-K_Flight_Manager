@@ -23,6 +23,7 @@ namespace FlightManager
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
+            builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
             builder.Services.AddTransient<IEmailSender, EmailSender>();
 

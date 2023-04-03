@@ -4,6 +4,7 @@ using FlightManager.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FlightManager.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230401183159_Passengers")]
+    partial class Passengers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -172,8 +174,9 @@ namespace FlightManager.Data.Migrations
                     b.Property<int>("ReservationId")
                         .HasColumnType("int");
 
-                    b.Property<int>("TicketType")
-                        .HasColumnType("int");
+                    b.Property<string>("TicketType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UCN")
                         .IsRequired()
@@ -357,7 +360,7 @@ namespace FlightManager.Data.Migrations
             modelBuilder.Entity("FlightManager.Models.Passanger", b =>
                 {
                     b.HasOne("FlightManager.Models.Reservation", "Reservation")
-                        .WithMany("ListPassangers")
+                        .WithMany("Passangers")
                         .HasForeignKey("ReservationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -434,7 +437,7 @@ namespace FlightManager.Data.Migrations
 
             modelBuilder.Entity("FlightManager.Models.Reservation", b =>
                 {
-                    b.Navigation("ListPassangers");
+                    b.Navigation("Passangers");
                 });
 #pragma warning restore 612, 618
         }
