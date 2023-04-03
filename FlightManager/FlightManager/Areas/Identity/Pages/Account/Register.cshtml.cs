@@ -20,6 +20,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using FlightManager.Data;
+using MimeKit;
+using MailKit.Net.Smtp;
 
 namespace FlightManager.Areas.Identity.Pages.Account
 {
@@ -145,11 +147,13 @@ namespace FlightManager.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
+            ApplicationUser user = new ApplicationUser();
+
             returnUrl ??= Url.Content("~/");
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = CreateUser();
+                user = CreateUser();
                 user.FirstName = Input.FirstName;
                 user.LastName = Input.LastName;
                 user.UCN = Input.UCN;
@@ -168,9 +172,12 @@ namespace FlightManager.Areas.Identity.Pages.Account
 
                 _context.ApplicationUsers.Add(user);
 
-                await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
+                await _userStore.SetUserNameAsync(user, Input.Username, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
+
+
+
 
                 if (result.Succeeded)
                 {
@@ -189,6 +196,10 @@ namespace FlightManager.Areas.Identity.Pages.Account
 
                     await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
                         $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+
+                    
+
+
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {

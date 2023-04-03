@@ -1118,3 +1118,8 @@ D:\IT кариера\EXAM_Module13\FlightManager\IT-K_Flight_Manager\FlightManag
 D:\IT кариера\EXAM_Module13\FlightManager\IT-K_Flight_Manager\FlightManager\FlightManager\obj\Debug\net6.0\FlightManager.pdb
 D:\IT кариера\EXAM_Module13\FlightManager\IT-K_Flight_Manager\FlightManager\FlightManager\obj\Debug\net6.0\FlightManager.genruntimeconfig.cache
 D:\IT кариера\EXAM_Module13\FlightManager\IT-K_Flight_Manager\FlightManager\FlightManager\obj\Debug\net6.0\ref\FlightManager.dll
+D:\IT кариера\EXAM_Module13\FlightManager\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\MailKit.dll
+D:\IT кариера\EXAM_Module13\FlightManager\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\MimeKit.dll
+D:\IT кариера\EXAM_Module13\FlightManager\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+D:\IT кариера\EXAM_Module13\FlightManager\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\SendGrid.dll
+D:\IT кариера\EXAM_Module13\FlightManager\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\StarkbankEcdsa.dll

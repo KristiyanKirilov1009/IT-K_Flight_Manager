@@ -64,6 +64,13 @@ namespace FlightManager.Controllers
         {
             if (ModelState.IsValid)
             {
+                if(flight.TakeOff > flight.Landing)
+                {
+                    ModelState.AddModelError("Landing", "Landing date must be after take off date!");
+                    return View(flight);
+                }
+
+
                 _context.Add(flight);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
