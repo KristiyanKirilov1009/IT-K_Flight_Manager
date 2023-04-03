@@ -4,6 +4,7 @@ using FlightManager.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FlightManager.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230402210238_PTicketType")]
+    partial class PTicketType
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -172,8 +174,8 @@ namespace FlightManager.Data.Migrations
                     b.Property<int>("ReservationId")
                         .HasColumnType("int");
 
-                    b.Property<int>("TicketType")
-                        .HasColumnType("int");
+                    b.Property<string>("TicketTypeId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("UCN")
                         .IsRequired()
@@ -182,6 +184,8 @@ namespace FlightManager.Data.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ReservationId");
+
+                    b.HasIndex("TicketTypeId");
 
                     b.ToTable("Passengers");
                 });
@@ -215,6 +219,20 @@ namespace FlightManager.Data.Migrations
                     b.HasIndex("FlightId");
 
                     b.ToTable("Reservations");
+                });
+
+            modelBuilder.Entity("FlightManager.Models.TicketType", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TicketTypes");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -362,7 +380,13 @@ namespace FlightManager.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("FlightManager.Models.TicketType", "TicketType")
+                        .WithMany()
+                        .HasForeignKey("TicketTypeId");
+
                     b.Navigation("Reservation");
+
+                    b.Navigation("TicketType");
                 });
 
             modelBuilder.Entity("FlightManager.Models.Reservation", b =>
