@@ -16,7 +16,7 @@ namespace FlightManager.Models
         }
         public Reservation()
         {
-            ListPassangers = new HashSet<Passanger>();
+            PassangerList = new HashSet<Passanger>();
             Flight = _context.Flights.Where(f => f.Id == FlightId).FirstOrDefault();
             CreatedAt = DateTime.Now;
             CompletedPassengers = 0;
@@ -33,6 +33,6 @@ namespace FlightManager.Models
         [ForeignKey("FlightId")]
         public Flight Flight { get; set; }
 
-        public ICollection<Passanger>? ListPassangers { get; set; }
+        public ICollection<Passanger>? PassangerList { get; set; }
     }
 }

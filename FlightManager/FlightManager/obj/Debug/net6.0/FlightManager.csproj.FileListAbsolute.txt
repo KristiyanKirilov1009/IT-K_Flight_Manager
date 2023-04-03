@@ -1123,3 +1123,10 @@ D:\IT кариера\EXAM_Module13\FlightManager\IT-K_Flight_Manager\FlightManag
 D:\IT кариера\EXAM_Module13\FlightManager\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\BouncyCastle.Crypto.dll
 D:\IT кариера\EXAM_Module13\FlightManager\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\SendGrid.dll
 D:\IT кариера\EXAM_Module13\FlightManager\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\StarkbankEcdsa.dll
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\MailKit.dll
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\MimeKit.dll
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\SendGrid.dll
+C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\StarkbankEcdsa.dll
