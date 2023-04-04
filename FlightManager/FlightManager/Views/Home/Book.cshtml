@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<section class="landing-book">
+    <div class="left-container">
+        <nav class="hidden">
+            <div class="image-container">
+                <h2 class="nav-title">FlightManager<span>.</span></h2>
+            </div>
+            <ul>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">HOME</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Privacy">ABOUT US</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="AllFlights">ALL FLIGHTS</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Book">BOOK A FLIGHT</a></li>
+                <li><a href="#">LOG IN</a></li>
+                <li><a href="#">REGISTER</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="right-container">
+        <h2 class="b-header hidden" style="padding-top:0px !important;text-align:Center">BOOK A FLIGHT NOW</h2>
+        <p class="b-text hidden" style="margin-bottom:40px; text-align:center;">You can book a flight right here</p>
+        <form action="#" class="hidden">
+            <div class="left-side-container">
+                <label>First Name</label>
+                <input type="text" placeholder="First Name"><br>
+                <label>Middle Name</label>
+                <input type="text" placeholder="Middle Name"><br>
+                <label>Last Name</label>
+                <input type="text" placeholder="Last Name"><br>
+            </div>
+            <div class="right-side-container">
+                <label>EGN</label><br>
+                <input type="text" placeholder="EGN"><br>
+                <label>Phone Number</label>
+                <input type="text" placeholder="Phone Number"><br>
+                <label>Nationality</label>
+                <input type="text" placeholder="Nationality"><br>
+                <label>Ticket Type</label>
+                <select name="" id="">
+                    <option value="Economic">Economic</option>
+                    <option value="Business">Business</option>
+                </select> <br>
+                <button type="submit" class="btn btn-primary" style="margin-top:20px;">Book Now</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>FlightManager &copy; 2023; All rights reserved</p>
+</footer>
