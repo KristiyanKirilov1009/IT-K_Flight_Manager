@@ -1130,3 +1130,5 @@ C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager\b
 C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\BouncyCastle.Crypto.dll
 C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\SendGrid.dll
 C:\Users\User\Documents\GitHub\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\StarkbankEcdsa.dll
+D:\IT кариера\EXAM_Module13\FlightManager\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\AutoMapper.dll
+D:\IT кариера\EXAM_Module13\FlightManager\IT-K_Flight_Manager\FlightManager\FlightManager\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
