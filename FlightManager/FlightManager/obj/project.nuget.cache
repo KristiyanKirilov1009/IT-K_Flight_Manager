@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rSMGHjlK7gqdr0/nG48JxnJOCASxbOoHvkxqMvu8UzI4sCZymvRuMkE55nbjw1rUsbwGFQNgRzsiiusQ06zzeg==",
+  "dgSpecHash": "vSMTuO+C87VoKGPlUWTBDZNbPWxjclOXhhwiAC+RN5DKzF1CYqU6cAIRaKBUe37iVmAGbMQ3BTIg65T+Arh7uA==",
   "success": true,
   "projectFilePath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\mailkit\\3.6.0\\mailkit.3.6.0.nupkg.sha512",

@@ -8,21 +8,22 @@
             <nav class="hidden">
             <h2 class="nav-title">FlightManager<span>.</span></h2>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">BOOK A FLIGHT</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">HOME</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Privacy">ABOUT US</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="AllFlights">ALL FLIGHTS</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Book">BOOK A FLIGHT</a></li>
                 <li><a href="#">LOG IN</a></li>
                 <li><a href="#">REGISTER</a></li>
             </ul>
         </nav>
-      @*  <div class="filler-left hidden">
+        <div class="filler-left hidden">
             <h2 class="landing-header">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, odit.</h2>
             <p class="landing-text"></p>
             <div class="button-container">
                 <button class="landing-btn">BOOK NOW</button>
                 <button class="landing-btn-second">VIEW FLIGHTS</button>
             </div>
-        </div>*@
+        </div>
     </section>
     <section class="section-b hidden">
         <h2 class="b-header">ALL FLIGHTS</h2>

@@ -26,6 +26,14 @@ namespace FlightManager.Controllers
             return View();
         }
 
+        public IActionResult Book() {
+            return View();
+        }
+
+        public IActionResult AllFlights() {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

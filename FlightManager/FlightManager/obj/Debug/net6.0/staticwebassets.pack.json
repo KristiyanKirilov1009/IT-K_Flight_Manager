@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\FlightManager.bundle.scp.css"
     },
     {
+      "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\bookstyle.css",
+      "PackagePath": "staticwebassets\\css\\bookstyle.css"
+    },
+    {
+      "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\flightsstyle.css",
+      "PackagePath": "staticwebassets\\css\\flightsstyle.css"
+    },
+    {
       "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\1.jpg",
       "PackagePath": "staticwebassets\\css\\images\\1.jpg"
     },
@@ -15,6 +23,18 @@
     {
       "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\2.png",
       "PackagePath": "staticwebassets\\css\\images\\2.png"
+    },
+    {
+      "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\3.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\3.jpg"
+    },
+    {
+      "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\4.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\4.jpg"
+    },
+    {
+      "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\4.png",
+      "PackagePath": "staticwebassets\\css\\images\\4.png"
     },
     {
       "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\site.css",

@@ -1,0 +1,112 @@
+HTML,BODY {
+    margin:0;
+    padding:0;
+}
+
+nav {
+    display:table;
+    width:100%;
+
+}
+
+.nav-title {
+    float:left;
+    font-family:'Open Sans';
+    font-weight:700;
+    color:#ffffff;
+    margin-left:5%;
+    margin-top:10px;
+}
+
+
+
+nav ul {
+    float:right;
+    height:100%;
+    margin: auto;
+    margin-right:100px;
+}
+
+nav ul li {
+    float:left;
+    margin-left:30px;
+    list-style: none;
+    margin-top:20px;
+}
+
+nav ul li a {
+    text-decoration:none;
+    color:#343434 !important;
+    font-family:'Open Sans';
+    font-weight:700 !important;
+}
+
+.left-container {
+    width:100%;
+    height:60px;
+}
+
+.image-container {
+    background:url('images/3.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    width:50%;
+    height:100vh;
+    float:left;
+}
+
+.right-container {
+    width:50%;
+    height:93vh;
+    float:right;
+    background:#fff;
+}
+
+ form {
+    width:50%;
+margin:auto;
+    }
+
+ form input {
+    border:none;
+    border-bottom:1px solid #ccc;
+    margin-bottom:25px;
+    width:100%;
+
+}
+
+input:focus-visible, select:focus-visible {
+    outline:none;
+}
+
+form select option {
+    border:none;
+}
+
+select {
+    margin-bottom:20px;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #ccc;
+}
+
+form .left-side-container {
+    width:50%;
+    margin:auto;
+}
+
+form .right-side-container {
+    width:50%;
+    margin:auto;
+}
+
+form button {
+    display:grid;
+}
+
+form label {
+    font-family:'Open Sans';
+    padding-left:2px;
+    font-size:12px;
+}
