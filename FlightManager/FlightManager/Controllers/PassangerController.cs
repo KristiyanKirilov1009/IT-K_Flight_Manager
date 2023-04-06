@@ -86,6 +86,7 @@ namespace FlightManager.Controllers
                 }
 
                 Reservation reservation = _context.Reservations.OrderByDescending(x => x.CreatedAt).FirstOrDefault();
+                reservation.Flight = _context.Flights.Where(f => f.Id == reservation.FlightId).FirstOrDefault();
 
                 Passanger passanger = new Passanger();
                 passanger.FirstName = model.FirstName;
@@ -95,14 +96,38 @@ namespace FlightManager.Controllers
                 passanger.UCN = model.UCN;
                 passanger.TicketType = model.TicketType;
                 passanger.Reservation = reservation;
+                Flight flight = reservation.Flight;
 
-                if (reservation.Passengers > reservation.CompletedPassengers)
+                reservation.CompletedPassengers++;
+                _context.Update(reservation);
+
+                if (reservation.CompletedPassengers <= reservation.Passengers)
                 {
-                    _context.Add(passanger);
-                    reservation.CompletedPassengers++;
-                    _context.Update(reservation);
-                    _context.SaveChanges();
+                    if (passanger.TicketType == TicketType.Economy)
+                    {
+                        if (flight.FilledSeatsEconomy < (flight.PassangerCapacity - flight.BussinessClassCapacity))
+                        {
+                            reservation.Flight.FilledSeatsEconomy++;
+                            _context.Update(reservation.Flight);
 
+                            _context.Add(passanger);
+                            _context.SaveChanges();
+                        }
+                    }
+                    else if (passanger.TicketType == TicketType.Buisness)
+                    {
+                        if (flight.FilledSeatsBuisness < flight.BussinessClassCapacity)
+                        {
+                            reservation.Flight.FilledSeatsBuisness++;
+                            _context.Update(reservation.Flight);
+
+                            _context.Add(passanger);
+                            _context.SaveChanges();
+                        }
+                    }
+                }
+                if (reservation.CompletedPassengers != reservation.Passengers)
+                {
                     return RedirectToAction("Create");
                 }
                 return View("~/Views/Reservation/Complete.cshtml");

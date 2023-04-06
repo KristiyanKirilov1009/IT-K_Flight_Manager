@@ -30,7 +30,6 @@ namespace FlightManager.Controllers
         }
 
         // GET: Flight/Details/5
-        [Authorize(Roles = "Administrator, Employee")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Flights == null)

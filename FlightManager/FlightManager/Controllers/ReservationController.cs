@@ -72,6 +72,7 @@ namespace FlightManager.Controllers
                 reservation.Flight = _context.Flights.Where(f => f.Id == model.FlightId).FirstOrDefault();
 
                 _context.Add(reservation);
+                
                 await _context.SaveChangesAsync();
 
                 return RedirectToAction("Create", "Passanger");

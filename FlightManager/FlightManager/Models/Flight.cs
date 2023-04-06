@@ -7,6 +7,8 @@ namespace FlightManager.Models
         public Flight()
         {
             Reservations = new HashSet<Reservation>();
+            FilledSeatsEconomy = 0;
+            FilledSeatsBuisness = 0;
         }
 
         public int Id { get; set; }
@@ -19,6 +21,9 @@ namespace FlightManager.Models
         public string PlaneType { get; set; }
         public string PlaneNumber { get; set; }
         public string PilotName { get; set; }
+
+        public int FilledSeatsEconomy { get; set; }
+        public int FilledSeatsBuisness { get; set; }
         public int PassangerCapacity { get; set; }
         public int BussinessClassCapacity { get; set; }
 

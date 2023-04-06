@@ -1,18 +1,17 @@
-﻿@{
+﻿@model IEnumerable<FlightManager.Models.Flight>
+
+@{
     ViewData["Title"] = "Home Page";
 }
-
-@model List<ApplicationUser>
 
 <section class="landing">
             <nav class="hidden">
             <h2 class="nav-title">FlightManager<span>.</span></h2>
             <ul>
                 <li><a asp-area="" asp-controller="Home" asp-action="Index">HOME</a></li>
-                <li><a asp-area="" asp-controller="Home" asp-action="Privacy">ABOUT US</a></li>
                 <li><a asp-area="" asp-controller="Flight" asp-action="Index">ALL FLIGHTS</a></li>
-                <li><a asp-area="" asp-controller="Home" asp-action="Book">BOOK A FLIGHT</a></li>
-                <li><a asp-area="" asp-controller="Roles" asp-action="Admin">Admin</a></li>
+                <li><a asp-area="" asp-controller="Reservation" asp-action="Create">BOOK A FLIGHT</a></li>
+                <li><a asp-area="" asp-controller="Roles" asp-action="Admin_Users">Admin</a></li>
                 <li><a asp-area="" asp-controller="Roles" asp-action="Employee">Employee</a></li>
 
             <partial name="_LoginPartial" />
@@ -62,253 +61,93 @@
       <section class="section-b hidden">
         <h2 class="b-header">ALL FLIGHTS</h2>
         <p class="b-text">Here you can see all of the flights</p>
-        <div class="table-container selectContainer">
-
-        <table class="dataTable table-sortable selectTable" id="myTable">
-            <thead class="thead-dark">
+    <div class="table-container">
+        <table id="myTable" class="table table-table-bordered table-hover table-sm">
+            <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">From</th>
-                    <th scope="col">To</th>
-                    <th scope="col">Departure</th>
-                    <th scope="col">Arrive</th>
-                    <th scope="col">Plane Type</th>
-
-                    <th scope="col">Pass. Capacity</th>
-                    <th scope="col">Business    Class Capacity</th>
-                    <th scope="col">All reservs.</th>
-                    <th scope="col">Company</th>
-                    <th scope="col">Pilot</th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LocationFrom)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LocationTo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TakeOff)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Landing)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PlaneType)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PlaneNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PilotName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PassangerCapacity)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BussinessClassCapacity)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FilledSeatsEconomy)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FilledSeatsBuisness)
+                    </th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td scope="row" class="idCol">1</td>
-                    <td>London</td>
-                    <td>New York</td>
-                    <td class="idCol">10:35</td>
-                    <td class="idCol">16:15</td>
-                    <td>Airliner</td>
-                    <td class="idCol">300</td>
-                    <td class="idCol">80</td>
-                    <td class="idCol">312</td>
-                    <td>Bulgarian Airlines</td>
-                    <td class="last-td">Mohammad Abdelaziz</td>
-
-                </tr>
-                <tr>
-                    <td scope="row" class="idCol">2</td>
-                    <td>Sofia</td>
-                    <td>Varna</td>
-                    <td class="idCol">14:15</td>
-                    <td class="idCol">15:00</td>
-                    <td>Airliner</td>
-                    <td class="idCol">250</td>
-                    <td class="idCol">60</td>
-                    <td class="idCol">137</td>
-                    <td>Bulgarian Airlines</td>
-                    <td class="last-td">Ivelin Dimitrov</td>
-
-                </tr>
-                <tr>
-                    <td scope="row" class="idCol">3</td>
-                    <td>Sofia</td>
-                    <td>Manchester, UK</td>
-                    <td class="idCol">9:50</td>
-                    <td class="idCol">12:45</td>
-                    <td>Airliner</td>
-                    <td class="idCol">280</td>
-                    <td class="idCol">80</td>
-                    <td class="idCol">266</td>
-                    <td>Wizz Air</td>
-                    <td class="last-td">Jhon Doe</td>
-
-                </tr>
-                <tr>
-                    <td scope="row" class="idCol">4</td>
-                    <td>Bucharesht</td>
-                    <td>Eindhoven</td>
-                    <td class="idCol">8:00</td>
-                    <td class="idCol">10:30</td>
-                    <td>Airliner</td>
-                    <td class="idCol">490</td>
-                    <td class="idCol">220</td>
-                    <td class="idCol">453</td>
-                    <td>Emirates Airways</td>
-                    <td class="last-td">Alexander Volkanovski</td>
-
-                </tr>
-                <tr>
-                    <td scope="row" class="idCol">5</td>
-                    <td>Varna</td>
-                    <td>Frankfurt</td>
-                    <td class="idCol">16:00</td>
-                    <td class="idCol">18:30</td>
-                    <td>Airliner</td>
-                    <td class="idCol">280</td>
-                    <td class="idCol">120</td>
-                    <td class="idCol">231</td>
-                    <td>Turkish Airlines</td>
-                    <td class="last-td">Jhon Cena</td>
-
-                </tr>
-                <tr>
-                    <td scope="row" class="idCol">6</td>
-                    <td>Sofia</td>
-                    <td>Paris</td>
-                    <td class="idCol">7:35</td>
-                    <td class="idCol">11:15</td>
-                    <td>Airliner</td>
-                    <td class="idCol">420</td>
-                    <td class="idCol">180</td>
-                    <td class="idCol">312</td>
-                    <td>Qatar Airways</td>
-                    <td class="last-td">Jhon Doe</td>
-
-                </tr>
-                <tr>
-                    <td scope="row" class="idCol">6</td>
-                    <td>Sofia</td>
-                    <td>Paris</td>
-                    <td class="idCol">7:35</td>
-                    <td class="idCol">11:15</td>
-                    <td>Airliner</td>
-                    <td class="idCol">420</td>
-                    <td class="idCol">180</td>
-                    <td class="idCol">312</td>
-                    <td>Qatar Airways</td>
-                    <td class="last-td">Jhon Doe</td>
-
-                </tr>
-                <tr>
-                    <td scope="row" class="idCol">6</td>
-                    <td>Sofia</td>
-                    <td>Paris</td>
-                    <td class="idCol">7:35</td>
-                    <td class="idCol">11:15</td>
-                    <td>Airliner</td>
-                    <td class="idCol">420</td>
-                    <td class="idCol">180</td>
-                    <td class="idCol">312</td>
-                    <td>Qatar Airways</td>
-                    <td class="last-td">Jhon Doe</td>
-
-                </tr>
-                <tr>
-                    <td scope="row" class="idCol">6</td>
-                    <td>Sofia</td>
-                    <td>Paris</td>
-                    <td class="idCol">7:35</td>
-                    <td class="idCol">11:15</td>
-                    <td>Airliner</td>
-                    <td class="idCol">420</td>
-                    <td class="idCol">180</td>
-                    <td class="idCol">312</td>
-                    <td>Qatar Airways</td>
-                    <td class="last-td">Jhon Doe</td>
-
-                </tr>
-                <tr>
-                    <td scope="row" class="idCol">6</td>
-                    <td>Sofia</td>
-                    <td>Paris</td>
-                    <td class="idCol">7:35</td>
-                    <td class="idCol">11:15</td>
-                    <td>Airliner</td>
-                    <td class="idCol">420</td>
-                    <td class="idCol">180</td>
-                    <td class="idCol">312</td>
-                    <td>Qatar Airways</td>
-                    <td class="last-td">Jhon Doe</td>
-
-                </tr>
-                <tr>
-                    <td scope="row" class="idCol">6</td>
-                    <td>Sofia</td>
-                    <td>Paris</td>
-                    <td class="idCol">7:35</td>
-                    <td class="idCol">11:15</td>
-                    <td>Airliner</td>
-                    <td class="idCol">420</td>
-                    <td class="idCol">180</td>
-                    <td class="idCol">312</td>
-                    <td>Qatar Airways</td>
-                    <td class="last-td">Jhon Doe</td>
-
-                </tr>
-                <tr>
-                    <td scope="row" class="idCol">6</td>
-                    <td>Sofia</td>
-                    <td>Paris</td>
-                    <td class="idCol">7:35</td>
-                    <td class="idCol">11:15</td>
-                    <td>Airliner</td>
-                    <td class="idCol">420</td>
-                    <td class="idCol">180</td>
-                    <td class="idCol">312</td>
-                    <td>Qatar Airways</td>
-                    <td class="last-td">Jhon Doe</td>
-
-                </tr>
-                <tr>
-                    <td scope="row" class="idCol">6</td>
-                    <td>Sofia</td>
-                    <td>Paris</td>
-                    <td class="idCol">7:35</td>
-                    <td class="idCol">11:15</td>
-                    <td>Airliner</td>
-                    <td class="idCol">420</td>
-                    <td class="idCol">180</td>
-                    <td class="idCol">312</td>
-                    <td>Qatar Airways</td>
-                    <td class="last-td">Jhon Doe</td>
-
-                </tr>
-                <tr>
-                    <td scope="row" class="idCol">6</td>
-                    <td>Sofia</td>
-                    <td>Paris</td>
-                    <td class="idCol">7:35</td>
-                    <td class="idCol">11:15</td>
-                    <td>Airliner</td>
-                    <td class="idCol">420</td>
-                    <td class="idCol">180</td>
-                    <td class="idCol">312</td>
-                    <td>Qatar Airways</td>
-                    <td class="last-td">Jhon Doe</td>
-
-                </tr>
-                <tr>
-                    <td scope="row" class="idCol">6</td>
-                    <td>Sofia</td>
-                    <td>Paris</td>
-                    <td class="idCol">7:35</td>
-                    <td class="idCol">11:15</td>
-                    <td>Airliner</td>
-                    <td class="idCol">420</td>
-                    <td class="idCol">180</td>
-                    <td class="idCol">312</td>
-                    <td>Qatar Airways</td>
-                    <td class="last-td">Jhon Doe</td>
-
-                </tr>
-                <tr>
-                    <td scope="row" class="idCol">6</td>
-                    <td>Sofia</td>
-                    <td>Paris</td>
-                    <td class="idCol">7:35</td>
-                    <td class="idCol">11:15</td>
-                    <td>Airliner</td>
-                    <td class="idCol">420</td>
-                    <td class="idCol">180</td>
-                    <td class="idCol">312</td>
-                    <td>Qatar Airways</td>
-                    <td class="last-td">Jhon Doe</td>
-
-                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LocationFrom)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LocationTo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TakeOff)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Landing)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PlaneType)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PlaneNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PilotName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PassangerCapacity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BussinessClassCapacity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FilledSeatsEconomy)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FilledSeatsBuisness)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
             </tbody>
         </table>
-        </div>
+    </div>
     </section>
     <section class="section-d hidden">
         <h2 class="b-header">Contact Us</h2>

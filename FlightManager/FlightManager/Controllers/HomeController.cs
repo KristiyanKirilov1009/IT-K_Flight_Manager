@@ -1,6 +1,7 @@
 ﻿using FlightManager.Data;
 using FlightManager.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 
 namespace FlightManager.Controllers
@@ -16,9 +17,11 @@ namespace FlightManager.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            return _context.Flights != null ?
+                        View(await _context.Flights.ToListAsync()) :
+                        Problem("Entity set 'ApplicationDbContext.Flights'  is null.");
         }
 
         public IActionResult Privacy()
