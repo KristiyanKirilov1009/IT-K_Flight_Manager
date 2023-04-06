@@ -10,13 +10,12 @@
             <ul>
                 <li><a asp-area="" asp-controller="Home" asp-action="Index">HOME</a></li>
                 <li><a asp-area="" asp-controller="Home" asp-action="Privacy">ABOUT US</a></li>
-                <li><a asp-area="" asp-controller="Home" asp-action="AllFlights">ALL FLIGHTS</a></li>
+                <li><a asp-area="" asp-controller="Flight" asp-action="Index">ALL FLIGHTS</a></li>
                 <li><a asp-area="" asp-controller="Home" asp-action="Book">BOOK A FLIGHT</a></li>
                 <li><a asp-area="" asp-controller="Roles" asp-action="Admin">Admin</a></li>
                 <li><a asp-area="" asp-controller="Roles" asp-action="Employee">Employee</a></li>
 
-            <li><a asp-area="Identity" asp-page="/Account/Login">LOG IN</a></li>
-                <li><a asp-area="Identity" asp-page="/Account/Register">REGISTER</a></li>
+            <partial name="_LoginPartial" />
             </ul>
         </nav>
         <div class="filler-left hidden">

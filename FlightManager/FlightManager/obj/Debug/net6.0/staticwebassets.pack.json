@@ -5,51 +5,19 @@
       "PackagePath": "staticwebassets\\FlightManager.bundle.scp.css"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "Id": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\adminStyle.css",
+      "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\adminStyle.css",
       "PackagePath": "staticwebassets\\css\\adminStyle.css"
     },
     {
-      "Id": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\bookstyle.css",
+      "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\bookstyle.css",
       "PackagePath": "staticwebassets\\css\\bookstyle.css"
     },
     {
-      "Id": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\employee.css",
+      "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\employee.css",
       "PackagePath": "staticwebassets\\css\\employee.css"
     },
     {
-      "Id": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\flightsstyle.css",
-=======
-      "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\bookstyle.css",
-      "PackagePath": "staticwebassets\\css\\bookstyle.css"
-    },
-    {
       "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\flightsstyle.css",
->>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
-=======
-      "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\bookstyle.css",
-      "PackagePath": "staticwebassets\\css\\bookstyle.css"
-    },
-    {
-      "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\flightsstyle.css",
->>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
-=======
-      "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\bookstyle.css",
-      "PackagePath": "staticwebassets\\css\\bookstyle.css"
-    },
-    {
-      "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\flightsstyle.css",
->>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
-=======
-      "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\bookstyle.css",
-      "PackagePath": "staticwebassets\\css\\bookstyle.css"
-    },
-    {
-      "Id": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\flightsstyle.css",
->>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
       "PackagePath": "staticwebassets\\css\\flightsstyle.css"
     },
     {

@@ -74,7 +74,7 @@ namespace FlightManager.Controllers
                 _context.Add(reservation);
                 await _context.SaveChangesAsync();
 
-                return View("~/View/Passanger/Create.cshtml ");
+                return RedirectToAction("Create", "Passanger");
             }
             return RedirectToAction(nameof(Index));
         }

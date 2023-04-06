@@ -1,22 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "Hash": "3ZULFslbRD2ubfCB5SlvsF+DVMJ0drCHAHcGQDTDmHA=",
-=======
-  "Hash": "I4mrFvV6Ak37OifFNk1+dxsXBsVzJ5D2FHXsRZ3Q0pg=",
->>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
-=======
-  "Hash": "I4mrFvV6Ak37OifFNk1+dxsXBsVzJ5D2FHXsRZ3Q0pg=",
->>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
-=======
-  "Hash": "I4mrFvV6Ak37OifFNk1+dxsXBsVzJ5D2FHXsRZ3Q0pg=",
->>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
-=======
-  "Hash": "I4mrFvV6Ak37OifFNk1+dxsXBsVzJ5D2FHXsRZ3Q0pg=",
->>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
+  "Hash": "qchH+3bP2zCmfrlPyMe9OdttA2ULQovzWF8aM6OAE8Y=",
   "Source": "FlightManager",
   "BasePath": "_content/FlightManager",
   "Mode": "Default",
@@ -1085,16 +1069,12 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FlightManager.bundle.scp.css"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\adminStyle.css",
+      "Identity": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\adminStyle.css",
       "SourceId": "FlightManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\",
+      "ContentRoot": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\",
       "BasePath": "_content/FlightManager",
       "RelativePath": "css/adminStyle.css",
       "AssetKind": "All",
@@ -1106,15 +1086,12 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\adminStyle.css"
-=======
->>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
     },
     {
-      "Identity": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\1.jpg",
+      "Identity": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\bookstyle.css",
       "SourceId": "FlightManager",
       "SourceType": "Discovered",
-<<<<<<< HEAD
-      "ContentRoot": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\",
+      "ContentRoot": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\",
       "BasePath": "_content/FlightManager",
       "RelativePath": "css/bookstyle.css",
       "AssetKind": "All",
@@ -1128,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bookstyle.css"
     },
     {
-      "Identity": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\employee.css",
+      "Identity": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\employee.css",
       "SourceId": "FlightManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\",
+      "ContentRoot": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\",
       "BasePath": "_content/FlightManager",
       "RelativePath": "css/employee.css",
       "AssetKind": "All",
@@ -1145,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\css\\employee.css"
     },
     {
-      "Identity": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\flightsstyle.css",
+      "Identity": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\flightsstyle.css",
       "SourceId": "FlightManager",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\",
+      "ContentRoot": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\",
       "BasePath": "_content/FlightManager",
       "RelativePath": "css/flightsstyle.css",
       "AssetKind": "All",
@@ -1162,35 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\css\\flightsstyle.css"
     },
     {
-      "Identity": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\1.jpg",
-      "SourceId": "FlightManager",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\",
-=======
       "Identity": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\1.jpg",
       "SourceId": "FlightManager",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\",
->>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
-=======
-      "ContentRoot": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\",
->>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
-=======
-    },
-    {
-      "Identity": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\1.jpg",
-      "SourceId": "FlightManager",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\",
->>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
-=======
-    },
-    {
-      "Identity": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\1.jpg",
-      "SourceId": "FlightManager",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\",
->>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
       "BasePath": "_content/FlightManager",
       "RelativePath": "css/images/1.jpg",
       "AssetKind": "All",
@@ -1236,6 +1188,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\images\\2.png"
+    },
+    {
+      "Identity": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\3.jpg",
+      "SourceId": "FlightManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\",
+      "BasePath": "_content/FlightManager",
+      "RelativePath": "css/images/3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\images\\3.jpg"
+    },
+    {
+      "Identity": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\4.jpg",
+      "SourceId": "FlightManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\",
+      "BasePath": "_content/FlightManager",
+      "RelativePath": "css/images/4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\images\\4.jpg"
+    },
+    {
+      "Identity": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\4.png",
+      "SourceId": "FlightManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\",
+      "BasePath": "_content/FlightManager",
+      "RelativePath": "css/images/4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\images\\4.png"
     },
     {
       "Identity": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\site.css",
