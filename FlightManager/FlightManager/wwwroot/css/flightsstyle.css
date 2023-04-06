@@ -2,6 +2,7 @@ nav {
     display:table;
     width:100%;
     height:60px;
+    background:none !important
 }
 
 .nav-title {
@@ -45,14 +46,15 @@ nav ul li a {
 
 /* First Section */
 
-.landing {
-    height:100vh;
-    width:100%;
-    display:table;
-    background:#191D28;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover;
+.landing-flights {
+    height: 100vh;
+    width: 100%;
+    display: table;
+    /*background:#191D28 !important;*/
+    background: #191D28 !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .filler-left {
@@ -73,6 +75,8 @@ nav ul li a {
     color:#fff;
     font-family:'Open Sans';
     font-weight:500;
+    text-align:center;
+    margin-top:30px;
     margin-bottom:30px;
 }
 
@@ -133,29 +137,48 @@ table thead {
 
 table {
     font-family: 'Montserrat';
-    color: #989AA3;
+    color: #fff;
     font-weight: 300;
     width: 100% !important;
     background: #191D28;
+    /*height: !important;*/
+    border:none !important;
+    border:1px solid red;
+
+}
+
+.last-td {
+    border-right:1px solid #989AA3;
 }
 
     table thead {
         text-align: center;
-        height: 30px;
+        height: 0px;
         color: #c7c7c7;
         background: #191D28 !important;
+        width:100% !important;
     }
 
         table thead tr th {
-            padding: 10px 20px;
-            background: #191D28;
+            padding: 0px 10px;
+            background: #191D28 !important;
+            height:60px;
+            color:#fff !important;
+            text-align:center !important;
+            border-bottom:1px solid #989AA3;
         }
 
 table tbody tr td {
     height:50px;
     border-bottom:1px solid #989AA3 !important;
     padding-left:0px;
-    padding-right:20px;
+    /*padding-right:20px;*/
+    text-align:center !important;
+}
+
+table tbody tr {
+    border:none !important;
+            border-right:1px solid #989AA3;
 }
 
 .idCol {
@@ -164,12 +187,27 @@ table tbody tr td {
     color:#fff;
 }
 
+tr {
+    border-left:none !important;
+}
+
+label {
+    color:#fff;
+}
+
+.dataTables_info {
+    color: #fff !important;
+}
+
+
+
 .table-container {
-    width:70%;
-    height:700px;
-    margin:auto;
-    border:none !important;
-    box-shadow:none !important;
+    width: 70%;
+    height: 700px;
+    margin: auto;
+    border: none !important;
+    box-shadow: none !important;
+    color: #fff !important;
 }
 
 /* custom scrollbar */

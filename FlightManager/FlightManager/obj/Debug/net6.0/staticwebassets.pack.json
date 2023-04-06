@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\FlightManager.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\adminStyle.css",
+      "PackagePath": "staticwebassets\\css\\adminStyle.css"
+    },
+    {
       "Id": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\bookstyle.css",
       "PackagePath": "staticwebassets\\css\\bookstyle.css"
+    },
+    {
+      "Id": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\employee.css",
+      "PackagePath": "staticwebassets\\css\\employee.css"
     },
     {
       "Id": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\flightsstyle.css",

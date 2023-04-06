@@ -3,17 +3,20 @@ HTML,BODY {
     padding:0;
 }
 
-nav {
-    display:table;
-    width:100%;
+.landing-book .book-nav {
+    background: #191D28 !important;
+}
 
+.book-nav {
+    display: table;
+    width: 100%;
 }
 
 .nav-title {
     float:left;
     font-family:'Open Sans';
     font-weight:700;
-    color:#ffffff;
+    color:#fff;
     margin-left:5%;
     margin-top:10px;
 }
@@ -34,9 +37,9 @@ nav ul li {
     margin-top:20px;
 }
 
-nav ul li a {
+nav ul li .book-nav {
     text-decoration:none;
-    color:#343434 !important;
+    color:#fff !important;
     font-family:'Open Sans';
     font-weight:700 !important;
 }
@@ -57,10 +60,10 @@ nav ul li a {
 }
 
 .right-container {
-    width:50%;
-    height:93vh;
-    float:right;
-    background:#fff;
+    width: 50%;
+    height: 93vh;
+    float: right;
+    background: #191D28;
 }
 
  form {
@@ -73,8 +76,13 @@ margin:auto;
     border-bottom:1px solid #ccc;
     margin-bottom:25px;
     width:100%;
+    background:none !important;
 
 }
+
+ form label {
+     color: #fff;
+ }
 
 input:focus-visible, select:focus-visible {
     outline:none;
@@ -109,4 +117,14 @@ form label {
     font-family:'Open Sans';
     padding-left:2px;
     font-size:12px;
+}
+
+form select {
+    background:none !important;
+    color:#fff;
+    padding-bottom:5px;
+}
+
+form select option {
+    color:#343434;
 }

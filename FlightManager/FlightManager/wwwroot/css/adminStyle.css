@@ -1,0 +1,159 @@
+html,body {
+    margin:0;
+    padding:0;
+}
+
+.col {
+    text-align: center;
+}
+
+h3 {
+    font-family:'Montserrat', Arial;
+}
+
+
+section h3 { 
+    text-align:Center;
+    padding-top:40px;
+    
+}
+
+table{
+    width:100% !important;
+    margin-top:25px !important;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(26,26,26,0.3); 
+    box-shadow: 5px 5px 15px 5px rgba(26,26,26,0.3);
+    
+}
+
+
+
+.table-sortable th{
+    cursor:pointer;
+}
+
+.table-sortable .th-sort-asc::after {
+    content: "\25b4";
+}
+
+
+.table-sortable .th-sort-desc::after {
+    content: "\25be";
+}
+
+.table-sortable .th-sort-asc::after,
+.table-sortable .th-sort-desc::after {
+    margin-left:5px;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+    background: rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    background: #191D28 !important;
+    height: 100vh;
+    width: 15% !important;
+    display: table;
+    FLOAT: LEFT;
+    margin: 0 !important;
+    border-right:1px solid #fff;
+}
+
+.sidebar-header {
+    font-family:"Montserrat";
+    margin-left:20px;
+    margin-top:20px;
+    color:#fff;
+    font-size:32px;
+}
+
+.menu-header {
+    font-family:Arial;
+    margin-left:20px;
+    margin-top:80px;
+    color:#ffff;
+}
+
+.sidebar nav {
+    margin-top:100px;
+}
+
+.sidebar nav ul li {
+    list-style:none;
+    margin-top:20px;
+}
+
+.sidebar nav ul li a {
+    text-transform:uppercase;
+    color:#f2f2f2;
+    text-decoration:none;
+    font-family:"Nunito Sans";
+    font-weight:lighter;
+    font-size:22px;
+}
+
+a:hover {
+    border-bottom:2px solid #f2f2f2;
+    padding-bottom:2px;
+    transition:all 500ms;
+}
+
+.center-form {
+    margin-left:20px;
+    width:70%;
+    height:600px;
+    margin:0 auto;
+    
+}
+
+.center-form h3 {
+    margin-bottom:90px;
+    text-transform:uppercase;
+    color:#fff;
+}
+
+.center-form input{
+    background:none;
+    border:none;
+    border-bottom:1px solid #ccc;
+    color:#fff;
+    height:40px;
+}
+
+.center-form button {
+    background:#3c88fa;
+    padding:10px 25px;
+    font-family:arial;
+    border:none;
+    color:#fff;
+    margin-left:30px;
+    border-radius:5px;
+}
+
+.users-container table tbody tr td {
+    color:#fff !important;
+}
+
+.flights-container table tbody tr td {
+    color:#FFF !important;
+}
+
+.reservations-container table tbody tr td {
+    color:#FFF !important;
+}
+
+.flights-container {
+    display:none;
+    background:red;
+}
+
+.flights-container table thead {
+    width:100% !important;
+}
+
+.reservations-container{ 
+    display:none;
+}
+

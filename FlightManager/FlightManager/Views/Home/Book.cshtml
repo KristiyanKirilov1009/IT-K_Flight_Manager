@@ -6,39 +6,39 @@
 
 <section class="landing-book">
     <div class="left-container">
-        <nav class="hidden">
+        <nav class="hidden book-nav">
             <div class="image-container">
                 <h2 class="nav-title">FlightManager<span>.</span></h2>
             </div>
             <ul>
-                <li><a asp-area="" asp-controller="Home" asp-action="Index">HOME</a></li>
-                <li><a asp-area="" asp-controller="Home" asp-action="Privacy">ABOUT US</a></li>
-                <li><a asp-area="" asp-controller="Home" asp-action="AllFlights">ALL FLIGHTS</a></li>
-                <li><a asp-area="" asp-controller="Home" asp-action="Book">BOOK A FLIGHT</a></li>
-                <li><a href="#">LOG IN</a></li>
-                <li><a href="#">REGISTER</a></li>
+                <li><a class="book-nav" asp-area="" asp-controller="Home" asp-action="Index">HOME</a></li>
+                <li><a class="book-nav" asp-area="" asp-controller="Home" asp-action="Privacy">ABOUT US</a></li>
+                <li><a class="book-nav" asp-area="" asp-controller="Home" asp-action="AllFlights">ALL FLIGHTS</a></li>
+                <li><a class="book-nav" asp-area="" asp-controller="Home" asp-action="Book">BOOK A FLIGHT</a></li>
+                <li><a class="book-nav" href="#">LOG IN</a></li>
+                <li><a class="book-nav" href="#">REGISTER</a></li>
             </ul>
         </nav>
     </div>
     <div class="right-container">
-        <h2 class="b-header hidden" style="padding-top:0px !important;text-align:Center">BOOK A FLIGHT NOW</h2>
-        <p class="b-text hidden" style="margin-bottom:40px; text-align:center;">You can book a flight right here</p>
+        <h2 class="b-header hidden" style="color:#fff !important;padding-top:70px !important;text-align:Center">BOOK A FLIGHT NOW</h2>
+        <p class="b-text hidden" style="margin-bottom:40px;color:#fff !important; text-align:center;">You can book a flight right here</p>
         <form action="#" class="hidden">
             <div class="left-side-container">
                 <label>First Name</label>
-                <input type="text" placeholder="First Name"><br>
+                <input type="text"><br>
                 <label>Middle Name</label>
-                <input type="text" placeholder="Middle Name"><br>
+                <input type="text"><br>
                 <label>Last Name</label>
-                <input type="text" placeholder="Last Name"><br>
+                <input type="text"><br>
             </div>
             <div class="right-side-container">
                 <label>EGN</label><br>
-                <input type="text" placeholder="EGN"><br>
+                <input type="text"><br>
                 <label>Phone Number</label>
-                <input type="text" placeholder="Phone Number"><br>
+                <input type="text"><br>
                 <label>Nationality</label>
-                <input type="text" placeholder="Nationality"><br>
+                <input type="text"/><br>
                 <label>Ticket Type</label>
                 <select name="" id="">
                     <option value="Economic">Economic</option>

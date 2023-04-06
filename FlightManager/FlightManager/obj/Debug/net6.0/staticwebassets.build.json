@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lnaGnHHa9zX10hVK8l34lHhPvUD1ZWpNbCs09TZEuyM=",
+  "Hash": "3ZULFslbRD2ubfCB5SlvsF+DVMJ0drCHAHcGQDTDmHA=",
   "Source": "FlightManager",
   "BasePath": "_content/FlightManager",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FlightManager.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\adminStyle.css",
+      "SourceId": "FlightManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\",
+      "BasePath": "_content/FlightManager",
+      "RelativePath": "css/adminStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\adminStyle.css"
+    },
+    {
       "Identity": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\bookstyle.css",
       "SourceId": "FlightManager",
       "SourceType": "Discovered",
@@ -1086,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bookstyle.css"
+    },
+    {
+      "Identity": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\employee.css",
+      "SourceId": "FlightManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\",
+      "BasePath": "_content/FlightManager",
+      "RelativePath": "css/employee.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\employee.css"
     },
     {
       "Identity": "C:\\Users\\serin\\Desktop\\DEV\\ITK Project\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\flightsstyle.css",

@@ -1,9 +1,9 @@
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
             entry.target.classList.add('show');
         } else {
-            entry.target.classList.remove('show'); 
+            entry.target.classList.remove('show');
         }
     })
 })
@@ -21,13 +21,13 @@ hiddenElements.forEach((el) => observer.observe(el));
  */
 
 
-function sortTableByColumn(table, column,asc = true) {
+function sortTableByColumn(table, column, asc = true) {
     const dirModifier = asc ? 1 : -1;
     const tBody = table.tBodies[0];
     const rows = Array.from(tBody.querySelectorAll("tr"));
 
     // Sort each row
-    const sortedRows = rows.sort((a,b) => {
+    const sortedRows = rows.sort((a, b) => {
         const aColText = a.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
         const bColText = b.querySelector(`td:nth-child(${column + 1})`).textContent.trim();
 
@@ -37,7 +37,7 @@ function sortTableByColumn(table, column,asc = true) {
     // Remove all existing TRs from the table
     while (tBody.firstChild) {
         tBody.removeChild(tBody.firstChild);
-    } 
+    }
 
     // Re-add the newly sorted rows
     tBody.append(...sortedRows);
@@ -55,7 +55,7 @@ document.querySelectorAll(".table-sortable th").forEach(headerCell => {
         const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
         const currentIsAscending = headerCell.classList.contains("th-sort-asc");
 
-        sortTableByColumn(tableElement,headerIndex,!currentIsAscending);
+        sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
     })
 })
 
