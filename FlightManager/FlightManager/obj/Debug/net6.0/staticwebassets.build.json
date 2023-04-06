@@ -2,7 +2,11 @@
   "Version": 1,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "Hash": "3ZULFslbRD2ubfCB5SlvsF+DVMJ0drCHAHcGQDTDmHA=",
+=======
+  "Hash": "I4mrFvV6Ak37OifFNk1+dxsXBsVzJ5D2FHXsRZ3Q0pg=",
+>>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
 =======
   "Hash": "I4mrFvV6Ak37OifFNk1+dxsXBsVzJ5D2FHXsRZ3Q0pg=",
 >>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
@@ -1078,6 +1082,7 @@
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FlightManager.bundle.scp.css"
 <<<<<<< HEAD
+<<<<<<< HEAD
     },
     {
 <<<<<<< HEAD
@@ -1163,6 +1168,14 @@
       "ContentRoot": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\",
 >>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
 =======
+      "ContentRoot": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\",
+>>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
+=======
+    },
+    {
+      "Identity": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\1.jpg",
+      "SourceId": "FlightManager",
+      "SourceType": "Discovered",
       "ContentRoot": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\wwwroot\\",
 >>>>>>> c3290ab2654943026d1fd3127506379cf9316b22
       "BasePath": "_content/FlightManager",
