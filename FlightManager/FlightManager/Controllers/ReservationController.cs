@@ -69,6 +69,7 @@ namespace FlightManager.Controllers
             if (ModelState.IsValid)
             {
                 Reservation reservation = _mapper.Map<Reservation>(model);
+                reservation.Flight = _context.Flights.Where(f => f.Id == model.FlightId).FirstOrDefault();
 
                 _context.Add(reservation);
                 await _context.SaveChangesAsync();

@@ -9,15 +9,10 @@ namespace FlightManager.Models
 {
     public class Reservation
     {
-        private ApplicationDbContext _context;
-        public Reservation(ApplicationDbContext context)
-        {
-            _context = context;
-        }
         public Reservation()
         {
             PassangerList = new HashSet<Passanger>();
-            Flight = _context.Flights.Where(f => f.Id == FlightId).FirstOrDefault();
+            Flight = new Flight();
             CreatedAt = DateTime.Now;
             CompletedPassengers = 0;
         }
