@@ -7,6 +7,7 @@
 </style>
 
 <nav class="employee-nav hidden">
+<<<<<<< HEAD
     <h2 class="nav-title" style="color:#fff;">Welcome Back,<span> @User.Identity?.Name!</span></h2>
     <ul style="color:#fff !important;">
         <li><a style="color:#fff !important;" href="#">HOME</a></li>
@@ -14,6 +15,15 @@
         <li><a style="color:#fff !important;" id="reservationsButton" asp-controller="Roles" asp-action="Employee_Reservations"> RESERVATIONS</a></li>
         <li><a style="color:#fff !important;" asp-controller="Roles" asp-action="Empl_Users">USERS</a></li>
         <li><a style="color:#fff !important;" asp-controller="Roles" asp-action="Empl_MyProfile">MY PROFILE</a></li>
+=======
+    <h2 class="nav-title" style="color:#343434;">Welcome Back,<span> @User.Identity?.Name!</span></h2>
+    <ul style="color:#343434 !important;">
+        <li><a asp-action="Index" asp-controller="Home" style="color:#343434;">HOME</a></li>
+        <li><a style="color:#343434;" id="flightsButton">FLIGHTS</a></li>
+        <li><a style="color:#343434;" id="reservationsButton" asp-controller="Roles" asp-action="Employee_Reservations"> RESERVATIONS</a></li>
+        <li><a style="color:#343434;" asp-controller="Roles" asp-action="Empl_Users">USERS</a></li>
+        <li><a style="color:#343434;" asp-controller="Roles" asp-action="Empl_MyProfile">MY PROFILE</a></li>
+>>>>>>> 5e7baecce562c61eef373856ebd5cc2524564d19
         <li>
             <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
                 <button type="submit" style="background:none !important;color:#fff !important;border:none !important;">LOGOUT</button>

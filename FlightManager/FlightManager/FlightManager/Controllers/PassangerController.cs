@@ -10,18 +10,21 @@ using FlightManager.Models;
 using FlightManager.Models.ViewModels;
 using AutoMapper;
 using System.Text.RegularExpressions;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace FlightManager.Controllers
 {
     public class PassangerController : Controller
     {
+        private readonly IEmailSender _emailSender;
         private readonly ApplicationDbContext _context;
         private readonly IMapper _mapper;
 
-        public PassangerController(ApplicationDbContext context, IMapper mapper)
+        public PassangerController(ApplicationDbContext context, IMapper mapper, IEmailSender emailSender)
         {
             _context = context;
             _mapper = mapper;
+            _emailSender = emailSender;
         }
 
         // GET: Passanger
@@ -116,20 +119,22 @@ namespace FlightManager.Controllers
                     }
                     else if (passanger.TicketType == TicketType.Buisness)
                     {
-                        if (flight.FilledSeatsBuisness < flight.BussinessClassCapacity)
-                        {
                             reservation.Flight.FilledSeatsBuisness++;
                             _context.Update(reservation.Flight);
 
                             _context.Add(passanger);
                             _context.SaveChanges();
-                        }
+
                     }
                 }
                 if (reservation.CompletedPassengers != reservation.Passengers)
                 {
                     return RedirectToAction("Create");
                 }
+
+                await _emailSender.SendEmailAsync(reservation.Email, "Reservation created successfully!",
+                       $"Your reservation was made successfully!\n{reservation.Flight.LocationFrom} - {reservation.Flight.LocationTo}");
+
                 return View("~/Views/Reservation/Complete.cshtml");
             }
             return RedirectToAction("Index", "Home");

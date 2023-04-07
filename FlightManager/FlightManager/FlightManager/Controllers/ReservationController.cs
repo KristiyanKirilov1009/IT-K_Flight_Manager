@@ -9,6 +9,7 @@ using FlightManager.Data;
 using FlightManager.Models;
 using FlightManager.Models.ViewModels;
 using AutoMapper;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace FlightManager.Controllers
 {
@@ -70,14 +71,21 @@ namespace FlightManager.Controllers
             {
                 Reservation reservation = _mapper.Map<Reservation>(model);
                 reservation.Flight = _context.Flights.Where(f => f.Id == model.FlightId).FirstOrDefault();
-
-                _context.Add(reservation);
+                Flight flight = reservation.Flight;
                 
+                if ((flight.FilledSeatsEconomy + flight.FilledSeatsBuisness) + reservation.Passengers >= flight.PassangerCapacity + flight.BussinessClassCapacity)
+                {
+                    ModelState.AddModelError("Passengers", "Not enough available seats on the chosen flight");
+                    var flightList = _context.Flights.ToList();
+                    ViewBag.List = flightList;
+                    return View(model);
+                }
+                _context.Add(reservation);
                 await _context.SaveChangesAsync();
 
                 return RedirectToAction("Create", "Passanger");
             }
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index", "Home");
         }
 
         // GET: Reservation/Edit/5

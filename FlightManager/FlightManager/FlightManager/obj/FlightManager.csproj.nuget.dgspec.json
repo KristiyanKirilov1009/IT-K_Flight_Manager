@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\serin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj",
+        "projectName": "FlightManager",
+        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 5e7baecce562c61eef373856ebd5cc2524564d19
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -116,7 +133,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+>>>>>>> 5e7baecce562c61eef373856ebd5cc2524564d19
         }
       }
     }
