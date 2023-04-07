@@ -72,10 +72,7 @@ namespace FlightManager.Controllers
                 Reservation reservation = _mapper.Map<Reservation>(model);
                 reservation.Flight = _context.Flights.Where(f => f.Id == model.FlightId).FirstOrDefault();
                 Flight flight = reservation.Flight;
-
-                _context.Add(reservation);
                 
-                await _context.SaveChangesAsync();
                 if ((flight.FilledSeatsEconomy + flight.FilledSeatsBuisness) + reservation.Passengers >= flight.PassangerCapacity + flight.BussinessClassCapacity)
                 {
                     ModelState.AddModelError("Passengers", "Not enough available seats on the chosen flight");
@@ -83,7 +80,9 @@ namespace FlightManager.Controllers
                     ViewBag.List = flightList;
                     return View(model);
                 }
-                
+                _context.Add(reservation);
+                await _context.SaveChangesAsync();
+
                 return RedirectToAction("Create", "Passanger");
             }
             return RedirectToAction("Index", "Home");
