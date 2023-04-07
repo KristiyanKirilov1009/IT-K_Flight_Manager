@@ -1,0 +1,86 @@
+﻿@model IEnumerable<FlightManager.Models.Reservation>
+
+<nav class="employee-nav hidden">
+    <h2 class="nav-title" style="color:#343434;">Welcome Back,<span> @User.Identity?.Name!</span></h2>
+    <ul style="color:#343434 !important;">
+        <li><a asp-action="Index" asp-controller="Home" style="color:#343434;">HOME</a></li>
+        <li><a style="color:#343434;" id="flightsButton" asp-action="Employee" asp-controller="Roles">FLIGHTS</a></li>
+        <li><a style="color:#343434;" id="reservationsButton" asp-controller="Roles" asp-action="Employee_Reservations"> RESERVATIONS</a></li>
+        <li><a style="color:#343434;" asp-controller="Roles" asp-action="Empl_Users">USERS</a></li>
+        <li><a style="color:#343434;" asp-controller="Roles" asp-action="Empl_MyProfile">MY PROFILE</a></li>
+        <li>
+            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button type="submit" class="nav-link btn btn-link text-dark">LOGOUT</button>
+            </form>
+        </li>
+    </ul>
+</nav>
+<section class="section-b" style="display:block;width:90%;height:100vh;margin:auto;" id="flightsSection">
+    <div class="center-form">
+        <div class="employee-flights-container selectContainer" style="display:block;" id="flightsContainer">
+
+            <h3>Reservations</h3>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Id)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Flight)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Passengers)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CreatedAt)
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Id)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Email)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FlightId)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Passengers)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CreatedAt)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<script>
+    const reservationsButton = document.getElementById("reservationsButton");
+    const reservationsSection = document.getElementById("reservationsContainer");
+
+    const flightsButton = document.getElementById("flightsButton");
+    const flightsSection = document.getElementById("flightsContainer");
+
+    flightsButton.addEventListener("click", () => {
+        flightsSection.style.display = "block";
+        reservationsSection.style.display = "none";
+    });
+    reservationsButton.addEventListener("click", () => {
+        flightsSection.style.display = "none";
+        reservationsSection.style.display = "block";
+    })
+</script>
+<script src="~/js/script.js"></script>
