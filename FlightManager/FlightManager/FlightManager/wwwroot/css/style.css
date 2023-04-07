@@ -1,0 +1,386 @@
+html,body {
+    margin:0;
+    padding:0;
+}
+
+/* Nav styling start */
+
+nav {
+    display:table;
+    width:100%;
+    height:60px;
+    background:none;
+}
+
+.nav-title {
+    float:left;
+    font-family:'Open Sans';
+    font-weight:700;
+    color:#fff;
+    margin-left:5%;
+    margin-top:10px;
+}
+
+.nav-title span {
+    color:#f4f800;
+}
+
+nav ul {
+    float:right;
+    height:100%;
+    margin: auto;
+    margin-right:100px;
+}
+
+nav ul li {
+    float:left;
+    margin-left:30px;
+    list-style: none;
+    margin-top:20px;
+}
+
+nav ul li a {
+    text-decoration:none;
+    color:#fff;
+    font-family:'Open Sans';
+    font-weight:400;
+}
+
+
+
+/* Nav styling end */
+
+
+/* First Section */
+
+.landing {
+    height:100vh;
+    width:100%;
+    display:table;
+    background:url('images/2.png') !important;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.filler-left {
+    display:table;
+    font-family:arial;
+    width:600px;
+    float:left;
+    margin: 0;
+    position: absolute;
+    top: 12% !important;
+    transform: translateY(-50%);
+    margin:auto;
+    margin-left:300px;
+}
+
+.landing-header {
+    font-size:48px;
+    margin-bottom:10px;
+    color:#fff;
+    font-family:'Open Sans';
+    font-weight:500;
+    margin-bottom:30px;
+}
+
+.landing-text {
+    font-size:21px;
+    padding:0;
+    margin:0;
+    margin-bottom:20px;
+    color:#fff;
+    font-family:'Montserrat';
+}
+
+.landing-btn {
+    padding:15px 20px;
+    cursor:pointer;
+    border:none;
+    background:none;
+    border:1px solid #fff;
+    color:#fff;
+    font-family:'Open Sans';
+    font-weight:500 !important;
+    margin-left:20px;
+}
+
+.landing-btn-second {
+    padding:15px 20px;
+    cursor:pointer;
+    border:1px solid #fff;
+    background:none;
+    color:#fff;
+    margin-left:0px;
+}
+
+.filer-left button:hover {
+    background:#fff;
+    color:#333;
+}
+
+.section-b {
+    width: 100%;
+    height: 83vh;
+    background: #fff;
+}
+
+.b-header {
+    text-align:center;
+    font-family:'Open Sans';
+    font-weight:400;
+    font-size:38px;
+    padding-top:60px;
+    color:#343434;
+}
+
+.b-text {
+    text-align:center;
+    color:#343434;
+    font-family:'Golos Text';
+}
+
+
+.selectContainer table {
+    width:100% !important;
+    color:#343434 !important;
+    background:#fff !important;
+}
+
+.selectTable thead tr th {
+    background:#fff !important;
+    color:#343434 !important;
+}
+
+.selectTable tbody tr td {
+    color:#343434 !important;
+    font-weight:500;
+}
+
+
+th {
+    background: rgb(0, 174, 255) !important;
+    color:#343434 !important;
+}
+
+
+.table-container {
+    width:700px;
+    margin:auto;
+    border:1px solid #ccc;
+    border-radius:20px;
+    margin-top:60px;
+    height:fit-content;
+    -webkit-box-shadow: 5px 5px 15px 0px #313131; 
+box-shadow: 5px 5px 15px 0px #313131;
+color:#343434;
+}
+
+.section-c { 
+    height:100vh;
+    width:100%;
+}
+
+.section-c form {
+    width:50%;
+float:right;    
+    }
+
+.section-c form input {
+    border:none;
+    border-bottom:1px solid #ccc;
+    margin-bottom:25px;
+    width:100%;
+
+}
+
+input:focus-visible, select:focus-visible {
+    outline:none;
+}
+
+form select option {
+    border:none;
+}
+
+.section-c select {
+    margin-bottom:20px;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #ccc;
+}
+
+.section-c form .left-side-container {
+    width:30%;
+    margin:auto;
+}
+
+.section-c form .right-side-container {
+    width:30%;
+    margin:auto;
+}
+
+.left-image {
+    width:50%;
+    height:100vh;
+    float:left;
+    background:url('images/1.jpg') !important;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.section-c form button {
+    display:grid;
+}
+
+.section-c form label {
+    font-family:'Open Sans';
+    padding-left:2px;
+    font-size:12px;
+}
+
+.section-d {
+    height:80vh;
+    width: 100%;
+}
+
+.section-d form{
+    padding-top:60px;
+    width:300px;
+    margin:auto;
+}
+
+.form-container {
+    width:600px;
+    margin:auto;
+}
+
+.section-d form input {
+    width:100%;
+    margin-bottom:20px;
+    border:none;
+    border-bottom:1px solid #ccc;
+}
+
+.section-d form textarea {
+    width:400px;
+    resize:none;
+    border:none;
+    border-bottom:1px solid #ccc;
+    height:200px !important;
+}
+
+textarea:focus-visible {
+    outline:none;
+}
+
+.selectContainer label {
+    color: #343434 !important;
+}
+
+.selectContainer .row .dataTables_info {
+    color:#343434 !important;
+}
+
+
+footer {
+    width:100%;
+    height:50px;
+    background:#ccc;
+}
+
+footer p {
+    text-align:Center;
+    padding-top:10px;
+}
+
+.hidden {
+    opacity:0;
+    filter:blur(5px);
+    transform:translateX(-100%);
+    transition:all 1s;
+}
+
+.show {
+    opacity:1;
+    filter: blur(0);
+    transform:translateX(0);
+}
+
+@media (min-width: 991.98px) {
+    main {
+      padding-left: 240px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .landing-header {
+        margin-left:0px;
+        font-size:24px;
+        text-align:center;
+    }
+
+    .filler-left {
+        margin-left:0;
+        width:100%;
+    }
+
+    .button-container {
+        width:311px;
+        margin:auto;
+    }
+
+    .section-b {
+        height:150%;
+    }
+
+    .b-header {
+        font-size:26px;
+    }
+
+    .section-b .table-container {
+        width:100%;
+        margin-bottom:50px;
+    }
+
+    .section-c .left-image{
+        float:none;
+        width:100%;
+    }
+
+    .section-c form {
+        float:none;
+        width:100%;
+        margin-top:0px !important;
+        /* margin-bottom:300px !important; */
+        float:none;
+    }
+
+    .section-c h2 {
+        margin-top:0;
+    }
+
+    .section-c p {
+        margin-bottom:10px !important;
+    }
+
+    .section-d {
+        height:105vh;
+        margin-top:780px;
+        width:100%;
+    }
+
+    .section-d .form-container{
+        width:100%;
+    }
+
+    .section-d form {
+
+    }
+
+    .section-d form textarea {
+        width:100%;
+    }
+  }

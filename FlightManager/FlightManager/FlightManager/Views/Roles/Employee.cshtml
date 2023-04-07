@@ -1,0 +1,120 @@
+﻿@model IEnumerable<FlightManager.Models.Flight>
+
+<nav class="employee-nav hidden">
+    <h2 class="nav-title" style="color:#343434;">Welcome Back,<span> @User.Identity?.Name!</span></h2>
+    <ul style="color:#343434 !important;">
+        <li><a style="color:#343434;" href="#">HOME</a></li>
+        <li><a style="color:#343434;" id="flightsButton" href="#">FLIGHTS</a></li>
+        <li><a style="color:#343434;" id="reservationsButton" asp-controller="Roles" asp-action="Employee_Reservations"> RESERVATIONS</a></li>
+        <li><a style="color:#343434;" asp-controller="Roles" asp-action="Empl_Users">USERS</a></li>
+        <li><a style="color:#343434;" asp-controller="Roles" asp-action="Empl_MyProfile">MY PROFILE</a></li>
+        <li>
+            <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button  type="submit" class="nav-link btn btn-link text-dark">LOGOUT</button>
+            </form>
+        </li>
+    </ul>
+</nav>
+<section class="section-b" style="display:block;width:90%;height:100vh;margin:auto;" id="flightsSection">
+    <div class="center-form">
+        <div class="employee-flights-container selectContainer" style="display:block;" id="flightsContainer">
+
+            <h3>Flights</h3>
+
+ <table>
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Id)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.LocationFrom) - 
+                            @Html.DisplayNameFor(model => model.LocationTo)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.TakeOff) - 
+                            @Html.DisplayNameFor(model => model.Landing)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PassangerCapacity)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.BussinessClassCapacity)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PlaneNumber)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PlaneType)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PilotName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FilledSeatsEconomy)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.FilledSeatsEconomy)
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Id)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LocationFrom) -
+                                @Html.DisplayFor(modelItem => item.LocationTo)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TakeOff) -
+                                @Html.DisplayFor(modelItem => item.Landing)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PassangerCapacity)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.BussinessClassCapacity)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PlaneNumber)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PlaneType)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PilotName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FilledSeatsEconomy)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FilledSeatsBuisness)
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<script>
+    const reservationsButton = document.getElementById("reservationsButton");
+    const reservationsSection = document.getElementById("reservationsContainer");
+
+    const flightsButton = document.getElementById("flightsButton");
+    const flightsSection = document.getElementById("flightsContainer");
+
+    flightsButton.addEventListener("click", () => {
+        flightsSection.style.display = "block";
+        reservationsSection.style.display = "none";
+    });
+    reservationsButton.addEventListener("click", () => {
+        flightsSection.style.display = "none";
+        reservationsSection.style.display = "block";
+    })
+</script>
+<script src="~/js/script.js"></script>
