@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj": {}
+    "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj": {
+    "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj",
+        "projectUniqueName": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj",
         "projectName": "FlightManager",
-        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\obj\\",
+        "projectPath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\FlightManager.csproj",
+        "packagesPath": "C:\\Users\\Kristiyan Kirilov\\.nuget\\packages\\",
+        "outputPath": "D:\\IT кариера\\EXAM_Module13\\FlightManager\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kristiyan Kirilov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

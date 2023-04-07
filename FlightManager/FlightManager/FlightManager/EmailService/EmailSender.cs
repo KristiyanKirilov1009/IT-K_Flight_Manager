@@ -1,10 +1,9 @@
-﻿using MailKit.Net.Smtp;
-using Microsoft.AspNetCore.Identity.UI.Services;
+﻿using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.CodeAnalysis.VisualBasic.Syntax;
-using MimeKit;
-using MimeKit.Cryptography;
 using SendGrid;
 using SendGrid.Helpers.Mail;
+using System.Net;
+using System.Net.Mail;
 
 namespace FlightManager.EmailService
 {
@@ -19,17 +18,25 @@ namespace FlightManager.EmailService
         public async Task SendEmailAsync(string email, string subject, string htmlMessage)
         {
 
-            var client = new SendGridClient(SendGridSecret);
-            var from = new EmailAddress("kick.2004@abv.bg", "Flight Manager Admins");
-            var to = new EmailAddress(email);
-            var msg = MailHelper.CreateSingleEmail(from, to, subject, "", htmlMessage);
-            var result = await client.SendEmailAsync(msg);
+            //var client = new SendGridClient(SendGridSecret);
+            //var from = new EmailAddress("kick.2004@abv.bg", "Flight Manager Admins");
+            //var to = new EmailAddress(email);
+            //var msg = MailHelper.CreateSingleEmail(from, to, subject, "", htmlMessage);
+            //var result = await client.SendEmailAsync(msg);
             //return result;
             //return Task.CompletedTask;
 
 
+            var smtpClient = new SmtpClient("smtp.gmail.com")
+            {
+                Port = 587,
+                Credentials = new NetworkCredential("k.vladimirov2004@gmail.com", "yeguhegwguktcyjl"),
+                EnableSsl = true,
+            };
 
-
+            MailMessage mailMessage = new MailMessage("k.vladimirov2004@gmail.com", email, subject, htmlMessage);
+            mailMessage.IsBodyHtml = true;
+            smtpClient.Send(mailMessage);
 
             //var emailToSend = new MimeMessage();
             //emailToSend.From.Add(MailboxAddress.Parse("test@gmail.com"));
