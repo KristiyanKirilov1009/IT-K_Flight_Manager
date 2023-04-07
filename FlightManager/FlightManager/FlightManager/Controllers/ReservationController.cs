@@ -9,6 +9,8 @@ using FlightManager.Data;
 using FlightManager.Models;
 using FlightManager.Models.ViewModels;
 using AutoMapper;
+using System.Text.Encodings.Web;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace FlightManager.Controllers
 {
@@ -17,11 +19,13 @@ namespace FlightManager.Controllers
         
         private readonly ApplicationDbContext _context;
         private readonly IMapper _mapper;
+        private readonly IEmailSender _emailSender;
 
-        public ReservationController(IMapper mapper, ApplicationDbContext context)
+        public ReservationController(IMapper mapper, ApplicationDbContext context, IEmailSender emailSender)
         {
             _mapper = mapper;
             _context = context;
+            _emailSender = emailSender;
         }
 
         // GET: Reservation
@@ -70,6 +74,9 @@ namespace FlightManager.Controllers
             {
                 Reservation reservation = _mapper.Map<Reservation>(model);
                 reservation.Flight = _context.Flights.Where(f => f.Id == model.FlightId).FirstOrDefault();
+
+                await _emailSender.SendEmailAsync(reservation.Email, "Reservation created successfully!",
+                       $"Your reservation was made successfully!\n{reservation.Flight.LocationFrom} - {reservation.Flight.LocationTo}");
 
                 _context.Add(reservation);
                 
