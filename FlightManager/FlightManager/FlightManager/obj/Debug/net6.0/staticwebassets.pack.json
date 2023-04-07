@@ -1,295 +1,295 @@
 {
   "Files": [
     {
-      "Id": "G:\\FlightManager\\FlightManager\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FlightManager.bundle.scp.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FlightManager.bundle.scp.css",
       "PackagePath": "staticwebassets\\FlightManager.bundle.scp.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\css\\adminStyle.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\adminStyle.css",
       "PackagePath": "staticwebassets\\css\\adminStyle.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\css\\bookstyle.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\bookstyle.css",
       "PackagePath": "staticwebassets\\css\\bookstyle.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\css\\employee.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\employee.css",
       "PackagePath": "staticwebassets\\css\\employee.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\css\\flightsstyle.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\flightsstyle.css",
       "PackagePath": "staticwebassets\\css\\flightsstyle.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\css\\images\\1.jpg",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\1.jpg",
       "PackagePath": "staticwebassets\\css\\images\\1.jpg"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\css\\images\\2.jpg",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\2.jpg",
       "PackagePath": "staticwebassets\\css\\images\\2.jpg"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\css\\images\\2.png",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\2.png",
       "PackagePath": "staticwebassets\\css\\images\\2.png"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\css\\images\\3.jpg",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\3.jpg",
       "PackagePath": "staticwebassets\\css\\images\\3.jpg"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\css\\images\\4.jpg",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\4.jpg",
       "PackagePath": "staticwebassets\\css\\images\\4.jpg"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\css\\images\\4.png",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\images\\4.png",
       "PackagePath": "staticwebassets\\css\\images\\4.png"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\css\\style.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\js\\script.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\js\\script.js",
       "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "G:\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\serin\\Desktop\\FlightManager Last\\IT-K_Flight_Manager\\FlightManager\\FlightManager\\FlightManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
