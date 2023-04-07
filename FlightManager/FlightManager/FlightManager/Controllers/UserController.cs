@@ -137,9 +137,11 @@ namespace FlightManager.Controllers
 
 
                     //await _context.SaveChangesAsync();
+                    //Current user can't edit himself
                     if (currentUser.FirstName == user.FirstName)
                     {
                         _context.SaveChanges();
+                        return RedirectToAction("Index", "Home");
                     }
                     else if (currentUser.FirstName != user.FirstName)
                     {
@@ -150,20 +152,22 @@ namespace FlightManager.Controllers
                         _context.Remove(userRole);
                         await _context.SaveChangesAsync();
 
+                        var admin = _context.Roles.Where(u => u.Name == "Administrator").FirstOrDefault();
+                        var employee = _context.Roles.Where(u => u.Name == "Employee").FirstOrDefault();
+
                         if (model.Role == "Administrator")
                         {
-                            newUserRole.RoleId = "5a12a8e1-63e4-4523-818e-ed97f9bd9f62";
+                            newUserRole.RoleId = admin.Id;
                         }
                         else if (model.Role == "Employee")
                         {
-                            newUserRole.RoleId = "034e77a1-b74b-4f89-bacf-8f9ede5419d7";
+                            newUserRole.RoleId = employee.Id;
                         }
                         _context.Add(newUserRole);
 
                         await _context.SaveChangesAsync();
+                        return RedirectToAction("C_Saved", "Roles");
                     }
-
-                    return RedirectToAction("Index", "User");
 
                 }
             }

@@ -43,6 +43,25 @@ namespace FlightManager.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        public IActionResult Panel()
+        {
+            var currentUserName = HttpContext.User.Identity.Name;
+            ApplicationUser user = _context.Users.Where(u => u.UserName == currentUserName).FirstOrDefault();
+            var currentUserRole = _context.UserRoles.Where(r => r.UserId == user.Id).FirstOrDefault();
+            var adminId = _context.Roles.Where(r => r.Name == "Administrator").FirstOrDefault();
+            var employeeId = _context.Roles.Where(r => r.Name == "Employee").FirstOrDefault();
+
+            if (currentUserRole.RoleId == adminId.Id)
+            {
+                return RedirectToAction("Admin_Users", "Roles");
+            }
+            else if (currentUserRole.RoleId == employeeId.Id)
+            {
+                return RedirectToAction("Employee", "Roles");
+            }
+            return NotFound();
+        }
+
 
     }
 }

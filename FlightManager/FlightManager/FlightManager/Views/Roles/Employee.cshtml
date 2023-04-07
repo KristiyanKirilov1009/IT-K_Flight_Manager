@@ -3,8 +3,8 @@
 <nav class="employee-nav hidden">
     <h2 class="nav-title" style="color:#343434;">Welcome Back,<span> @User.Identity?.Name!</span></h2>
     <ul style="color:#343434 !important;">
-        <li><a style="color:#343434;" href="#">HOME</a></li>
-        <li><a style="color:#343434;" id="flightsButton" href="#">FLIGHTS</a></li>
+        <li><a asp-action="Index" asp-controller="Home" style="color:#343434;">HOME</a></li>
+        <li><a style="color:#343434;" id="flightsButton">FLIGHTS</a></li>
         <li><a style="color:#343434;" id="reservationsButton" asp-controller="Roles" asp-action="Employee_Reservations"> RESERVATIONS</a></li>
         <li><a style="color:#343434;" asp-controller="Roles" asp-action="Empl_Users">USERS</a></li>
         <li><a style="color:#343434;" asp-controller="Roles" asp-action="Empl_MyProfile">MY PROFILE</a></li>

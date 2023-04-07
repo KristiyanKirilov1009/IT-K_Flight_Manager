@@ -116,14 +116,12 @@ namespace FlightManager.Controllers
                     }
                     else if (passanger.TicketType == TicketType.Buisness)
                     {
-                        if (flight.FilledSeatsBuisness < flight.BussinessClassCapacity)
-                        {
                             reservation.Flight.FilledSeatsBuisness++;
                             _context.Update(reservation.Flight);
 
                             _context.Add(passanger);
                             _context.SaveChanges();
-                        }
+
                     }
                 }
                 if (reservation.CompletedPassengers != reservation.Passengers)

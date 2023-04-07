@@ -89,5 +89,10 @@ namespace FlightManager.Controllers
             return View(user);
 
         }
+
+        public IActionResult C_Saved()
+        {
+            return View();
+        }
     }
 }
