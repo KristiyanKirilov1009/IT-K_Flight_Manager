@@ -1,27 +1,27 @@
 ﻿@model IEnumerable<FlightManager.Models.Flight>
 
 <nav class="employee-nav hidden">
-    <h2 class="nav-title" style="color:#343434;">Welcome Back,<span> @User.Identity?.Name!</span></h2>
-    <ul style="color:#343434 !important;">
+    <h2 class="nav-title" style="color:#fff;">Welcome Back,<span> @User.Identity?.Name!</span></h2>
+    <ul style="color:#fff !important;">
         <li><a asp-action="Index" asp-controller="Home" style="color:#343434;">HOME</a></li>
-        <li><a style="color:#343434;" id="flightsButton" href="#">FLIGHTS</a></li>
-        <li><a style="color:#343434;" id="reservationsButton" asp-controller="Roles" asp-action="Employee_Reservations"> RESERVATIONS</a></li>
-        <li><a style="color:#343434;" asp-controller="Roles" asp-action="Empl_Users">USERS</a></li>
-        <li><a style="color:#343434;" asp-controller="Roles" asp-action="Empl_MyProfile">MY PROFILE</a></li>
+        <li><a style="color:#fff;" id="flightsButton" href="#">FLIGHTS</a></li>
+        <li><a style="color:#fff;" id="reservationsButton" asp-controller="Roles" asp-action="Employee_Reservations"> RESERVATIONS</a></li>
+        <li><a style="color:#fff;" asp-controller="Roles" asp-action="Empl_Users">USERS</a></li>
+        <li><a style="color:#fff;" asp-controller="Roles" asp-action="Empl_MyProfile">MY PROFILE</a></li>
         <li>
             <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                <button  type="submit" class="nav-link btn btn-link text-dark">LOGOUT</button>
+                <button type="submit" style="background:none !important;color:#fff !important;border:none !important;">LOGOUT</button>
             </form>
         </li>
     </ul>
 </nav>
-<section class="section-b" style="display:block;width:90%;height:100vh;margin:auto;" id="flightsSection">
+<section class="section-b" style="display:block;width:90%;height:100vh;margin:auto;background:#191D28;color:#fff !important;" id="flightsSection">
     <div class="center-form">
         <div class="employee-flights-container selectContainer" style="display:block;" id="flightsContainer">
 
             <h3>Flights</h3>
 
- <table>
+ <table id="flightsTable">
                 <thead>
                     <tr>
                         <th>

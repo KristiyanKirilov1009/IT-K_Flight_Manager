@@ -4,16 +4,14 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Flights</h1>
-
-
+@*
 <div class="table-container">
     <form >
         <input type="submit" value="Home page" class="btn btn-primary" asp-controller="Home" asp-action="Index"/>
     </form>
 
     <table id="myTable" class="table table
--table-bordered table-hover table-sm">
+-table-bordered table-hover table-sm" style="color:#fff !important;">
         <thead>
             <tr>
                 <th>
@@ -80,7 +78,95 @@
             }
         </tbody>
     </table>
-    <div>
-        <a asp-action="Create" asp-controller="Reservation">Reserve a fligth</a>
+   
+</div>*@
+
+
+
+<section class="landing-flights">
+    <nav class="hidden">
+        <h2 class="nav-title">FlightManager<span>.</span></h2>
+        <ul style="width:35% !important;">
+            <li><a asp-area="" asp-controller="Home" asp-action="Index">HOME</a></li>
+            <li><a asp-area="" asp-controller="Flight" asp-action="Index">ALL FLIGHTS</a></li>
+            <li><a asp-area="" asp-controller="Reservation" asp-action="Create">BOOK A FLIGHT</a></li>
+
+            <partial name="_LoginPartial" />
+        </ul>
+    </nav>
+    <h1 class="landing-header">ALL FLIGHTS</h1>
+    <div class="table-container">
+        <table id="myTable" class="table table
+-table-bordered table-hover table-sm" style="color:#fff !important;">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LocationFrom)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LocationTo)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TakeOff)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Landing)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PlaneType)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PlaneNumber)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PilotName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PassangerCapacity)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BussinessClassCapacity)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LocationFrom)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LocationTo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TakeOff)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Landing)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PlaneType)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PlaneNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PilotName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PassangerCapacity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BussinessClassCapacity)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div>
+            <a asp-action="Create" asp-controller="Reservation">Reserve a fligth</a>
+        </div>
     </div>
-</div>
+
+</section>

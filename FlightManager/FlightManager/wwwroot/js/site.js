@@ -5,15 +5,19 @@
 
 $(document).ready(function () {
     $('#myTable').DataTable({
-        "paging":true
+        "scrollCollapse": true,
+        "scrollX": "450px",
+        "paging": true
     });
     $('#flightsTable').DataTable({
         "scrollCollapse": true,
-        "scrollY": "650px",
+        "scrollX": "450px",
         "paging": true
     });
     $('#reservationsTable').DataTable({
-        "paging": true
+        "paging": true,
+        "scrollCollapse": true,
+        "scrollX": "450px",
     });
 });
 

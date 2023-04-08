@@ -4,7 +4,7 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+@*<h1>Create</h1>
 
 <h4>Reservation</h4>
 <hr />
@@ -43,11 +43,64 @@
 
 <div>
     <a asp-action="Index" asp-controller="Flight">Back to List</a>
-</div>
+</div>*@
+
+
+
+<section class="landing-book">
+    <div class="left-container">
+        <nav class="hidden book-nav">
+            <div class="image-container">
+                <h2 class="nav-title">FlightManager<span>.</span></h2>
+            </div>
+
+
+            <ul style="width:35% !important;">
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">HOME</a></li>
+                <li><a asp-area="" asp-controller="Flight" asp-action="Index">ALL FLIGHTS</a></li>
+                <li><a asp-area="" asp-controller="Reservation" asp-action="Create">BOOK A FLIGHT</a></li>
+
+                <partial name="_LoginPartial" />
+            </ul>
+
+        </nav>
+    </div>
+    <div class="right-container">
+        <h2 class="b-header hidden" style="color:#fff !important;padding-top:70px !important;text-align:Center">BOOK A FLIGHT NOW</h2>
+        <p class="b-text hidden" style="margin-bottom:40px;color:#fff !important; text-align:center;">You can book a flight right here</p>
+        <form asp-action="Create" method="post" style="position:absolute !important;z-index:1000;width:50% !important;margin:auto !important;">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <span asp-validation-for="Email" style="color:red"></span>
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div><br />
+            <div class="form-group" asp-for="Flight">
+                <span asp-validation-for="FlightId" style="color:red"></span>
+                <label asp-for="FlightId" class="control-label"></label>
+                <select class="form-control" asp-for="FlightId">
+                    <option value="">Select a Flight</option>
+                    @foreach (Flight flight in ViewBag.List) {
+                        <option asp-for="Flight" value="@flight.Id">@flight.LocationFrom - @flight.LocationTo: @flight.TakeOff</option>
+                    }
+                </select><br />
+            </div>
+            <div class="form-group">
+                <span asp-validation-for="Passengers" style="color:red"></span>
+                <label asp-for="Passengers" class="control-label"></label>
+                <input asp-for="Passengers" class="form-control">
+            </div><br />
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</section>
 
 @section Scripts{
     @{
         <partial name="_ValidationScriptsPartial"></partial>
     }
-}
+    }
 

@@ -129,7 +129,7 @@ nav ul li a {
 }
 
 .employee-nav ul li a {
-    color:#343434 !important;
+    color: #343434 !important;
 }
 
 .employee-flights-table table {
@@ -138,17 +138,24 @@ nav ul li a {
 
 .employee-flights-container table tbody tr td {
     background: #191D28 !important;
-    color:#fff !important;
+    color: #fff !important;
 }
 
 .reservations-container label {
-    color:#343434;
+    color: #fff;
 }
 
 .reservations-container .row .dataTables_info {
-    color:#343434 !important;
+    color: #fff !important;
 }
 
+.employee-flights-container label {
+    color: #fff !important;
+}
+
+.employee-flights-container .row .dataTables_info {
+    color: #fff !important;
+}
 
 .reservations-container {
     display: none;

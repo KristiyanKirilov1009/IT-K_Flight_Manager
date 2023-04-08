@@ -302,10 +302,22 @@ footer p {
     transition:all 1s;
 }
 
+.section-b .table-container table {
+    color:#fff !important;
+}
+
+.section-b .table-container label {
+    color:#343434 !important;
+}
+
+.section-b .table-container .row .dataTables_info {
+    color:#343434 !important;
+}
+
 .show {
-    opacity:1;
+    opacity: 1;
     filter: blur(0);
-    transform:translateX(0);
+    transform: translateX(0);
 }
 
 @media (min-width: 991.98px) {
